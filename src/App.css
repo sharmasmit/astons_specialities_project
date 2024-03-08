@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face{
+  font-family: "Albertus";
+  src: url(./Fonts/AlbertusBold.ttf), url(./Fonts/AlbertusMediumRegular.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(./Fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./Fonts/Montserrat-Regular.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --cream: #DBCC97;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  font-size: 1.75rem;
+}
+h2{
+  font-size: 1.5rem;
+}
+h3{
+  font-size: 1rem;
+  font-family: "Albertus";
+}
+h4{
+  font-size: 1.1669rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
+  max-width: 24.563rem;
+  position: relative;
+}
+
+.TopHeader{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0.625rem 1.875rem;
 }
-
-.App-link {
-  color: #61dafb;
+button{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TopHeader a span {
+  position: absolute;
+  top: 0.4375rem;
+  padding: 0.0625rem;
+  background-color: #000000;
+  color: #DBCC97;
+  border-radius: 50%;
+  font-size: 0.6669rem;
+}
+.sideMenu {
+  position: absolute;
+  top: 0;
+  display: none;
+  padding: 1.25rem 1.875rem;
+  width: 14.375rem;
+  height: 65rem;
+  background-image: url(./Images/LeftSizeMenu.png);
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+}
+.MenuOpen{
+  display: block;
+}
+.sideMenu h3{
+  padding: 0.625rem 0;
+  font-weight: 400;
+  color: #F4F1E8;
+  opacity: 50%;
+  transition: 0.5s;
+}
+.sideMenu h3:hover{
+  color: var(--cream);
+  opacity: 100%;
 }
