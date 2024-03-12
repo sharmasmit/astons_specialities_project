@@ -264,7 +264,7 @@ nav a:hover:after {
 }
 .FoodDetails-Box .Food-head{
   text-align: center;
-  padding: 0.344rem 0;
+  padding: 0.344rem 1.875rem;
   line-height: 19px;
 }
 .food-heading{

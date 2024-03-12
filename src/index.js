@@ -13,6 +13,7 @@ import Navbar from "./Components/Navbar";
 import Slider from "./Components/Slider";
 import Category from "./Components/Category";
 import FoodDetails from "./Components/FoodDetails";
+import CheckOut from "./Components/CheckOut";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "/FoodDetails",
     element: <FoodDetails/>
+  },
+  {
+    path: "/CheckOut",
+    element: <CheckOut/>
   }
 ]);
 root.render(
