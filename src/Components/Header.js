@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
-  let show = true;
-
   const ShowMenu = () => {
     document.getElementById("SideMenu").style.display = "block";
   };
@@ -16,12 +14,23 @@ function Header() {
       <header>
         <div className="TopHeader">
           <button type="submit" onClick={ShowMenu}>
-            <img src={require("../Images/HamburgerBar.png")} alt="HamburgerBar" />
+            <img
+              src={require("../Images/HamburgerBar.png")}
+              alt="HamburgerBar"
+            />
           </button>
           <img src={require("../Images/AstonsLogo.png")} alt="Logo" />
           <Link to={"#"}>
-            <img src={require("../Images/ShopIcon.png")} alt="Shop" />
+            <img
+              src={require("../Images/ShopIcon.png")}
+              alt="Shop"
+              className="Shop-Icon"
+            />
             <span>01</span>
+            <img
+              src={require("../Images/CloseBtnDark.png")}
+              style={{ display: "none" }}
+            />
           </Link>
         </div>
         <div className="sideMenu" id="SideMenu">

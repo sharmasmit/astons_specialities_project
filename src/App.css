@@ -21,31 +21,50 @@
 }
 
 h1{
-  font-size: 1.75rem;
+  font-size: 1.313rem;
 }
 h2{
-  font-size: 1.5rem;
+  font-size: 1.125rem;
+  font-family: "Albertus";
 }
 h3{
   font-size: 1rem;
   font-family: "Albertus";
 }
 h4{
-  font-size: 1.1669rem;
+  font-size: 0.875rem;
+  font-family: "Montserrat";
+}
+h5{
+  font-size: 0.75rem;
+  font-family: "Montserrat";
+}
+a{
+  text-decoration: none;
 }
 
-header{
-  max-width: 24.563rem;
+button, .cartBtn{
+  font-family: "Montserrat";
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.8331rem;
+  padding: 0.625rem 0;
+  margin: 0.313rem 0;
+}
+header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodDetails{
+  width: 24.563rem;
+  margin: auto;
+}
+
+.TopHeader, .Add-Cart-Box{
   position: relative;
-}
-
-.TopHeader{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.625rem 1.875rem;
 }
-button{
+.TopHeader button{
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -65,11 +84,17 @@ button{
   display: none;
   padding: 1.25rem 1.875rem;
   width: 14.375rem;
-  height: 65rem;
+  height: 100%;
   background-image: url(./Images/LeftSizeMenu.png);
   background-position: center;
   background-size: cover;
   transition: 0.5s;
+  z-index: 999;
+}
+.sideMenu button, .plusBtn, .minusBtn{
+  background-color: transparent;
+  padding: 0.438rem;
+  margin: 0;
 }
 .MenuOpen{
   display: block;
@@ -84,4 +109,202 @@ button{
 .sideMenu h3:hover{
   color: var(--cream);
   opacity: 100%;
+}
+.FrontPage{
+  padding: 6.25rem 3.125rem;
+  background-image: url("./Images/ASTONS-BG.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+.frontPage-inner {
+  position: relative;
+}
+.FrontPage::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background-image: linear-gradient( #000000E6, #00000074,  #0000004D, #00000033 50%);
+}
+.loginBtn{
+  width: 100%;
+  background-color: var(--cream);
+  color: #000000;
+}
+.loginBtn:hover{
+  background-color: #572500;
+  color: #FFFFFF;
+}
+.guestBtn{
+  width: 100%;
+  color: #572500;
+  background-color: #FFFFFF;
+}
+.guestBtn:hover{
+  background-color: #F4F1E8;
+  color: #000000;
+}
+.FrontPage a{
+  text-decoration: underline;
+  color: #FFFFFF;
+  font-family: "Montserrat";
+}
+.Slider, .Add-Cart-Box{
+  padding: 1.25rem;
+}
+.Table{
+  background-image: url(./Images/TableNo.1_BG.png);
+  background-position: center;
+  background-size: cover;
+  color: var(--cream);
+  position: relative;
+}
+.left-arrow, .left-arrow-white{
+  position: absolute;
+  top: 0.938rem;
+  left: 1.875rem;
+  display: none;
+}
+.Navbar{
+  background-color: var(--cream);
+  padding: 1.25rem 1.875rem ;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a{
+  color: #000000;
+  font-size: 1rem;
+  font-family: "Albertus";
+}
+nav a::after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease-in-out, background-color .5s ease;
+}
+nav a:hover:after {
+  width: 100%;
+  background: black;
+}
+.card a{
+  color: #572500;
+  display: flex;
+  margin-top: 2.5rem;
+  justify-content: right;
+}
+.Product-Categories, .category-child{
+  padding: 0.625rem;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 10.375rem;
+  margin: 0.625rem;
+  border-radius: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  overflow: hidden;
+}
+.card-head{
+  padding: 0.625rem;
+}
+.card-head h3{
+  font-weight: bold;
+}
+.Slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+  overflow: hidden;
+}
+.categories{
+  background-color: #FFFFFF;
+}
+.top-round{
+  padding: 1.875rem;
+  position: relative;
+  margin-top: -50px;
+  background-color: #FFFFFF;
+}
+.categories .card{
+  background-color: #572500;
+  color: #FFFFFF;
+}
+.categories .card a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+}
+.categories h4, .categories h1 {
+  font-family: "Albertus";
+}
+.categories .left-card a{
+  margin-top: 2.375rem;
+}
+.categories .right-card a{
+  margin-top: 1.063rem;
+}
+.category-page .Table .left-arrow, .FoodDetails .Table .left-arrow-white{
+  display: block;
+}
+.FoodDetails-Box .Food-head{
+  text-align: center;
+  padding: 0.344rem 0;
+  line-height: 19px;
+}
+.food-heading{
+  padding: 0.625rem 1.25rem;
+  background-color: var(--cream);
+  color: #000000;
+  font-weight: bold;
+  margin: 1.875rem 0;
+}
+.Plus-Minus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.938rem 0.313rem ;
+  background-color: #F4F1E8;
+  border-radius: 0.625rem;
+  margin: 0.625rem 0;
+}
+.Plus-Minus button, .Plus-Minus h4{
+  padding: 0;
+  margin: 0 0.938rem;
+}
+.main-h4 {
+  flex: 1;
+}
+.Food-box{
+  padding: 0 1.25rem;
+}
+.Add-Cart-Box{
+  background-color: #FFFFFF;
+  padding: 1.25rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+.cartBtn{
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 0.625rem 1.875rem;
+  margin: 0;
+}
+.Add-Cart-Box .Plus-Minus{
+  background-color: transparent;
+  margin: 0;
 }

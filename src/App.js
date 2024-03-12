@@ -1,8 +1,10 @@
-import './App.css';
+import "./App.css";
+import FrontPage from "./Components/FrontPage";
 
 function App() {
   return (
     <>
+      <FrontPage />
     </>
   );
 }
