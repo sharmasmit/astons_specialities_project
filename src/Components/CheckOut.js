@@ -3,6 +3,8 @@ import Header from "./Header";
 import Table from "./Table";
 import { Link } from "react-router-dom";
 import AddSlider from "./AddSlider";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 
 function CheckOut() {
   return (
@@ -23,11 +25,11 @@ function CheckOut() {
             <h5 className="last-H5">1 x Coleslaw</h5>
             <div className="Plus-Minus">
               <button type="submit" className="minusBtn">
-                <img src={require("../Images/Minas-cream.png")} />
+              <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">1</h4>
               <button type="submit" className="plusBtn">
-                <img src={require("../Images/Plus-cream.png")} />
+              <FontAwesomeIcon icon={faPlus} />
               </button>
 
               <Link to="#">Edit</Link>
@@ -48,11 +50,11 @@ function CheckOut() {
             <h5 className="last-H5">1 x French Fries</h5>
             <div className="Plus-Minus">
               <button type="submit" className="minusBtn">
-                <img src={require("../Images/Minas-cream.png")} />
+              <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">1</h4>
               <button type="submit" className="plusBtn">
-                <img src={require("../Images/Plus-cream.png")} />
+              <FontAwesomeIcon icon={faPlus} />
               </button>
 
               <Link to="#">Edit</Link>
@@ -73,11 +75,11 @@ function CheckOut() {
             <h5 className="last-H5">1 x Corn Niblets</h5>
             <div className="Plus-Minus">
               <button type="submit" className="minusBtn">
-                <img src={require("../Images/Minas-cream.png")} />
+              <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">1</h4>
               <button type="submit" className="plusBtn">
-                <img src={require("../Images/Plus-cream.png")} />
+              <FontAwesomeIcon icon={faPlus} />
               </button>
 
               <Link to="#">Edit</Link>
@@ -98,11 +100,11 @@ function CheckOut() {
             <h5 className="last-H5">1 x Corn Niblets</h5>
             <div className="Plus-Minus">
               <button type="submit" className="minusBtn">
-                <img src={require("../Images/Minas-cream.png")} />
+              <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">1</h4>
               <button type="submit" className="plusBtn">
-                <img src={require("../Images/Plus-cream.png")} />
+              <FontAwesomeIcon icon={faPlus} />
               </button>
 
               <Link to="#">Edit</Link>
@@ -135,12 +137,15 @@ function CheckOut() {
           className="buttons"
           style={{ padding: "0.625rem", paddingBottom: "3.125rem" }}
         >
+          <Link to="/Home"></Link>
           <button type="submit" className="ContinueBtn">
             Continue Order
           </button>
-          <button type="submit" className="checkout">
-            Checkout
-          </button>
+          <Link to="/Thankyou">
+            <button type="submit" className="checkout">
+              Checkout
+            </button>
+          </Link>
         </div>
       </div>
     </>

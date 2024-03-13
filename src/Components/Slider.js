@@ -1,13 +1,22 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import { FreeMode, Pagination } from "swiper/modules";
 
 function Slider() {
   return (
     <>
       <Swiper
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        slidesPerView={1}
+        spaceBetween={10}
+        freeMode={false}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Pagination]}
+        className="mySwiper"
       >
         <SwiperSlide className="Slide">
           <img src={require("../Images/SliderBG1.png")} alt="Slider-bg" />

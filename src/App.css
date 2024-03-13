@@ -52,7 +52,7 @@ button, .cartBtn{
   padding: 0.625rem 0;
   margin: 0.313rem 0;
 }
-header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodDetails, .checkOut-page, .thankYou-page, .orderDetails, .orderHistory, .orderHistory-Details, .sideMenu{
+header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodDetails, .checkOut-page, .thankYou-page, .orderDetails, .orderHistory, .orderHistory-Details, .sideMenu, .Add-Cart-Box{
   max-width: 24.563rem;
   margin: auto;
 }
@@ -64,6 +64,7 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
   align-items: center;
   padding: 0.625rem 1.875rem;
 }
+
 .TopHeader button{
   background-color: transparent;
   border: 0;
@@ -91,7 +92,7 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
   background-position: center;
   background-size: cover;
   transition: 0.5s;
-  z-index: 999;
+  z-index: 99999;
 }
 .sideMenu button, .plusBtn, .minusBtn{
   background-color: transparent;
@@ -208,7 +209,7 @@ nav a:hover:after {
   color: #572500;
   display: flex;
   margin-top: 2.5rem;
-  justify-content: right;
+  /* justify-content: right; */
 }
 .Product-Categories, .category-child{
   padding: 0.625rem;
@@ -221,14 +222,24 @@ nav a:hover:after {
   width: 10.375rem;
   margin: 0.625rem;
   border-radius: 10px;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: 0px 4px 32px 0px rgba(0,0,0,0.15);
   overflow: hidden;
 }
 .card-head{
   padding: 0.625rem;
 }
 .card-head h3{
-  font-weight: bold;
+  font-weight: 400;
+  line-height: 24px;
+}
+.card-head h4{
+  line-height: 19px;
+}
+.card-head h5{
+  line-height: 18px;
+}
+.card-head a, .Plus-Minus h4{
+  line-height: 19px;
 }
 .Slide , .buttons, .roundBtns{
   display: flex;
@@ -250,13 +261,13 @@ nav a:hover:after {
   background-color: #572500;
   color: #FFFFFF;
 }
-.categories .card a, .cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4, .orderDetails-inner h3, .orderHistory-box h4,.History-details{
+.categories .card a, .cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4, .orderDetails-inner h3, .orderHistory-box h4,.History-details, .viewMore{
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #FFFFFF;
 }
-.categories h4, .categories h1, .FoodDetails h1 {
+.categories h1, .FoodDetails h1 {
   font-family: "Albertus";
   line-height: 31.5px;
 }
@@ -282,6 +293,7 @@ nav a:hover:after {
   color: #000000;
   font-weight: bold;
   margin: 1.875rem 0;
+  line-height: 24px;
 }
 .Plus-Minus{
   display: flex;
@@ -306,12 +318,19 @@ nav a:hover:after {
   background-color: #FFFFFF;
   padding: 1.25rem;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 .cartBtn{
   background-color: #000000;
   color: #FFFFFF;
   padding: 0.625rem 1.875rem;
   margin: 0;
+}
+.cartBtn:hover, .backMenu:hover, .checkOut-page .buttons .checkout:hover, .order-received button:hover{
+  background-color: #572500;
+  color: #FFFFFF;
 }
 .Add-Cart-Box .Plus-Minus, .checkOut-box .Plus-Minus{
   background-color: transparent;
@@ -341,7 +360,7 @@ nav a:hover:after {
 .checkOut-box .Plus-Minus{
   padding-bottom: 0;
 }
-.checkOut-box h4{
+.checkOut-box h4, nav a, .categories h4{
   font-family: "Albertus";
   line-height: 21px;
 }
@@ -366,15 +385,15 @@ nav a:hover:after {
 .AddSlide .card{
   margin: 0;
 }
-.AddSlider{
-  padding: 1.25rem 0;
+.AddSlider .swiper-free-mode > .swiper-wrapper{
+  padding-bottom: 3.125rem;
 }
 .cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4 , .orderDetails-inner h3, .orderHistory-box h4, .orderHistory-box h5, .History-details h1, .History-details h5{
   color: #000000;
   padding: 0.313rem 0;
 }
 .cart-total-inner{
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  box-shadow: 0px 4px 32px 0px rgba(0,0,0,0.15);
   border-radius: 0.625rem;
 }
 .buttons .ContinueBtn, .checkout{
@@ -383,18 +402,31 @@ nav a:hover:after {
   color: #572500;
   border: 1px solid #572500;
 }
-.buttons button, .order-received button{
+.buttons .ContinueBtn:hover{
+  background-color: var(--cream);
+  color: #000000;
+  border: 1px solid var(--cream);
+}
+.buttons button{
+  width: 10.375rem;
+  margin: 0 0.625rem;
+}
+
+.order-received button{
   width: 100%;
   margin: 0 0.625rem;
 }
-.buttons .checkout , .order-received button{ 
+.checkOut-page .buttons .checkout , .order-received button{ 
   color: #FFFFFF;
   background-color: #000000;
   border: 1px solid #000000;
 }
-.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+.AddSlider .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
   display: none;
 }
+/* .checkOut-inner .AddSlider .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  display: none;
+} */
 .order-received h2{
   line-height: 27px;
 }
@@ -455,4 +487,16 @@ nav a:hover:after {
 }
 .historyDetails-inner .History-details{
   padding: 1.563rem 1.25rem;
+}
+.Slider .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  display: block;
+  margin-bottom: 1.25rem;
+}
+.Slider .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  background-color: var(--cream);
+}
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa{
+  color: #572500;
+  font-size: 1.1rem;
+  font-weight: 100;
 }

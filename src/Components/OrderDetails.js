@@ -3,7 +3,7 @@ import React from "react";
 function OrderDetails() {
   return (
     <>
-      <div className="orderDetails">
+      <div className="orderDetails" style={{ paddingBottom: "3.75rem" }}>
         <div className="orderDetails-inner">
           <h4>
             1 x New York Strip <span className="order-prise">$130.60</span>

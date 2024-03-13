@@ -5,6 +5,8 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
 import { FreeMode, Pagination } from "swiper/modules";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 function AddSlider() {
   return (
@@ -13,9 +15,6 @@ function AddSlider() {
         slidesPerView={2}
         spaceBetween={10}
         freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
         modules={[FreeMode, Pagination]}
         className="mySwiper"
       >
@@ -26,7 +25,7 @@ function AddSlider() {
               <h4>New York Strip</h4>
               <Link style={{}} className="viewMore">
                 <h3>$2.90</h3>
-                <img src={require("../Images/Add-Plus.png")} />
+                <FontAwesomeIcon icon={faPlus} />
               </Link>
             </div>
           </div>
@@ -38,7 +37,7 @@ function AddSlider() {
               <h4>French Fries</h4>
               <Link style={{}} className="viewMore">
                 <h3>$4.90</h3>
-                <img src={require("../Images/Add-Plus.png")} />
+                <FontAwesomeIcon icon={faPlus} />
               </Link>
             </div>
           </div>
@@ -50,7 +49,7 @@ function AddSlider() {
               <h4>Burger</h4>
               <Link style={{}} className="viewMore">
                 <h3>$7.90</h3>
-                <img src={require("../Images/Add-Plus.png")} />
+                <FontAwesomeIcon icon={faPlus} />
               </Link>
             </div>
           </div>

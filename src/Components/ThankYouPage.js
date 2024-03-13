@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Table from "./Table";
 import OrderDetails from "./OrderDetails";
+import { Link } from "react-router-dom";
 
 function ThankYouPage() {
   return (
@@ -19,9 +20,15 @@ function ThankYouPage() {
             >
               Thank You!
             </h2>
-            <button type="submit" style={{ margin: "2rem 0rem 0rem 0rem" }}>
-              Back to Menu
-            </button>
+            <Link to="/Home">
+              <button
+                type="submit"
+                className="backMenu"
+                style={{ margin: "2rem 0rem 0rem 0rem" }}
+              >
+                Back to Menu
+              </button>
+            </Link>
           </div>
           <OrderDetails />
         </div>

@@ -1,6 +1,9 @@
 import React from "react";
 import Header from "./Header";
 import Table from "./Table";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 
 function FoodDetails() {
   return (
@@ -16,7 +19,11 @@ function FoodDetails() {
           </h1>
           <h4
             className="Food-head"
-            style={{ fontWeight: "400", paddingBottom: "0", lineHeight: "19px" }}
+            style={{
+              fontWeight: "400",
+              paddingBottom: "0",
+              lineHeight: "19px",
+            }}
           >
             New York Strip Loin charbroiled to your preferred doneness
           </h4>
@@ -26,140 +33,142 @@ function FoodDetails() {
             <div className="Plus-Minus">
               <h4 className="main-h4">Rare</h4>
               <button type="submit" className="minusBtn">
-                <img src={require("../Images/Minas-cream.png")} />
+                <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">0</h4>
               <button type="submit" className="plusBtn">
-                <img src={require("../Images/Plus-cream.png")} />
+                <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">Medium Rare</h4>
               <button type="submit" className="minusBtn">
-                <img src={require("../Images/Minas-cream.png")} />
+                <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">0</h4>
               <button type="submit" className="plusBtn">
-                <img src={require("../Images/Plus-cream.png")} />
+                <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">Medium</h4>
               <button type="submit" className="minusBtn">
-                <img src={require("../Images/Minas-cream.png")} />
+                <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">0</h4>
               <button type="submit" className="plusBtn">
-                <img src={require("../Images/Plus-cream.png")} />
+                <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">Medium Well</h4>
               <button type="submit" className="minusBtn">
-                <img src={require("../Images/Minas-cream.png")} />
+                <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">0</h4>
               <button type="submit" className="plusBtn">
-                <img src={require("../Images/Plus-cream.png")} />
+                <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">Well Done</h4>
               <button type="submit" className="minusBtn">
-                <img src={require("../Images/Minas-cream.png")} />
+                <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">0</h4>
               <button type="submit" className="plusBtn">
-                <img src={require("../Images/Plus-cream.png")} />
+                <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
           </div>
           <h3 className="food-heading">Select 2 Side Dishes</h3>
-          <div className="Food-box">
+          <div className="Food-box" style={{ paddingBottom: "6.25rem" }}>
             <div className="Plus-Minus">
               <h4 className="main-h4">Baked Potato</h4>
               <button type="submit" className="minusBtn">
-                <img src={require("../Images/Minas-cream.png")} />
+                <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">0</h4>
               <button type="submit" className="plusBtn">
-                <img src={require("../Images/Plus-cream.png")} />
+                <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">French Fries</h4>
               <button type="submit" className="minusBtn">
-                <img src={require("../Images/Minas-cream.png")} />
+                <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">0</h4>
               <button type="submit" className="plusBtn">
-                <img src={require("../Images/Plus-cream.png")} />
+                <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">Tasty Rice</h4>
               <button type="submit" className="minusBtn">
-                <img src={require("../Images/Minas-cream.png")} />
+                <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">0</h4>
               <button type="submit" className="plusBtn">
-                <img src={require("../Images/Plus-cream.png")} />
+                <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">Corn Niblets</h4>
               <button type="submit" className="minusBtn">
-                <img src={require("../Images/Minas-cream.png")} />
+                <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">0</h4>
               <button type="submit" className="plusBtn">
-                <img src={require("../Images/Plus-cream.png")} />
+                <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">Coleslaw</h4>
               <button type="submit" className="minusBtn">
-                <img src={require("../Images/Minas-cream.png")} />
+                <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">0</h4>
               <button type="submit" className="plusBtn">
-                <img src={require("../Images/Plus-cream.png")} />
+                <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">Mushrooms Soup</h4>
               <button type="submit" className="minusBtn">
-                <img src={require("../Images/Minas-cream.png")} />
+                <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">0</h4>
               <button type="submit" className="plusBtn">
-                <img src={require("../Images/Plus-cream.png")} />
+                <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
           </div>
           <div className="Add-Cart-Box">
             <div className="Plus-Minus">
               <button type="submit" className="minusBtn">
-                <img src={require("../Images/Minas-cream.png")} />
+                <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">0</h4>
               <button type="submit" className="plusBtn">
-                <img src={require("../Images/Plus-cream.png")} />
+                <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
-            <button type="submit" className="cartBtn">
-              Add to Cart
-            </button>
+            <Link to="/CheckOut">
+              <button type="submit" className="cartBtn">
+                Add to Cart
+              </button>
+            </Link>
           </div>
         </div>
       </div>
