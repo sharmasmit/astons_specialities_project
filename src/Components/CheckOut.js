@@ -25,11 +25,11 @@ function CheckOut() {
             <h5 className="last-H5">1 x Coleslaw</h5>
             <div className="Plus-Minus">
               <button type="submit" className="minusBtn">
-              <FontAwesomeIcon icon={faMinus} />
+                <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">1</h4>
               <button type="submit" className="plusBtn">
-              <FontAwesomeIcon icon={faPlus} />
+                <FontAwesomeIcon icon={faPlus} />
               </button>
 
               <Link to="#">Edit</Link>
@@ -50,11 +50,11 @@ function CheckOut() {
             <h5 className="last-H5">1 x French Fries</h5>
             <div className="Plus-Minus">
               <button type="submit" className="minusBtn">
-              <FontAwesomeIcon icon={faMinus} />
+                <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">1</h4>
               <button type="submit" className="plusBtn">
-              <FontAwesomeIcon icon={faPlus} />
+                <FontAwesomeIcon icon={faPlus} />
               </button>
 
               <Link to="#">Edit</Link>
@@ -75,11 +75,11 @@ function CheckOut() {
             <h5 className="last-H5">1 x Corn Niblets</h5>
             <div className="Plus-Minus">
               <button type="submit" className="minusBtn">
-              <FontAwesomeIcon icon={faMinus} />
+                <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">1</h4>
               <button type="submit" className="plusBtn">
-              <FontAwesomeIcon icon={faPlus} />
+                <FontAwesomeIcon icon={faPlus} />
               </button>
 
               <Link to="#">Edit</Link>
@@ -100,11 +100,11 @@ function CheckOut() {
             <h5 className="last-H5">1 x Corn Niblets</h5>
             <div className="Plus-Minus">
               <button type="submit" className="minusBtn">
-              <FontAwesomeIcon icon={faMinus} />
+                <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">1</h4>
               <button type="submit" className="plusBtn">
-              <FontAwesomeIcon icon={faPlus} />
+                <FontAwesomeIcon icon={faPlus} />
               </button>
 
               <Link to="#">Edit</Link>
@@ -114,20 +114,22 @@ function CheckOut() {
           </div>
 
           <div className="AddSlider">
-            <h2 style={{ paddingBottom: "0.625rem" }}>You May Also Like</h2>
+            <h2 style={{ paddingBottom: "0.625rem", paddingTop: "2.5rem" }}>
+              You May Also Like
+            </h2>
             <AddSlider />
           </div>
 
           <div className="cartTotal">
             <h2 style={{ paddingBottom: "0.625rem" }}>Cart Total</h2>
             <div className="cart-total-inner">
-              <h4>
+              <h4 style={{ paddingTop: "0" }}>
                 Subtotal <span className="price-txt">$130.60</span>
               </h4>
               <h4>
                 GST 8% <span className="price-txt">$10.45</span>
               </h4>
-              <h3>
+              <h3 className="last-H5">
                 Subtotal <span className="price-txt">$141.05</span>
               </h3>
             </div>

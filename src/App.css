@@ -342,7 +342,7 @@ nav a:hover:after {
 .checkOut-box .last-H5{
   padding-bottom: 0.313rem;
 }
-.orderDetails-inner .last-H5, .orderHistory-box .order-review{
+.orderDetails-inner .last-H5, .orderHistory-box .order-review, .cartTotal .last-H5{
   padding-bottom: 0;
 }
 .orderHistory-box .topH1{
