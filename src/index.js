@@ -14,6 +14,7 @@ import Slider from "./Components/Slider";
 import Category from "./Components/Category";
 import FoodDetails from "./Components/FoodDetails";
 import CheckOut from "./Components/CheckOut";
+import AddSlider from "./Components/AddSlider";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
   {
     path: "/CheckOut",
     element: <CheckOut/>
+  },
+  {
+    path: "/AddSlider",
+    element: <AddSlider/>
   }
 ]);
 root.render(

@@ -16,7 +16,7 @@ function FoodDetails() {
           </h1>
           <h4
             className="Food-head"
-            style={{ fontWeight: "400", paddingBottom: "0" }}
+            style={{ fontWeight: "400", paddingBottom: "0", lineHeight: "19px" }}
           >
             New York Strip Loin charbroiled to your preferred doneness
           </h4>

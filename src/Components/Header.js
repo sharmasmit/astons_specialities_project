@@ -13,10 +13,11 @@ function Header() {
     <>
       <header>
         <div className="TopHeader">
-          <button type="submit" onClick={ShowMenu}>
+          <button type="submit" onClick={ShowMenu} >
             <img
               src={require("../Images/HamburgerBar.png")}
               alt="HamburgerBar"
+              className="MenuBtn"
             />
           </button>
           <img src={require("../Images/AstonsLogo.png")} alt="Logo" />
@@ -26,10 +27,10 @@ function Header() {
               alt="Shop"
               className="Shop-Icon"
             />
-            <span>01</span>
+            <span className="Shop-Icon">01</span>
             <img
               src={require("../Images/CloseBtnDark.png")}
-              style={{ display: "none" }}
+              className="CloseBtnDark"
             />
           </Link>
         </div>

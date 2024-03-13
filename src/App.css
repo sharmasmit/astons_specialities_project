@@ -52,7 +52,7 @@ button, .cartBtn{
   padding: 0.625rem 0;
   margin: 0.313rem 0;
 }
-header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodDetails{
+header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodDetails, .checkOut-page{
   width: 24.563rem;
   margin: auto;
 }
@@ -155,7 +155,7 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
   color: #FFFFFF;
   font-family: "Montserrat";
 }
-.Slider, .Add-Cart-Box{
+.Slider, .Add-Cart-Box, .checkOut-box, .checkOut-inner, .cart-total-inner{
   padding: 1.25rem;
 }
 .Table{
@@ -198,7 +198,7 @@ nav a:hover:after {
   width: 100%;
   background: black;
 }
-.card a{
+.card a, .delete-btn{
   color: #572500;
   display: flex;
   margin-top: 2.5rem;
@@ -224,7 +224,7 @@ nav a:hover:after {
 .card-head h3{
   font-weight: bold;
 }
-.Slide{
+.Slide , .buttons{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,14 +244,15 @@ nav a:hover:after {
   background-color: #572500;
   color: #FFFFFF;
 }
-.categories .card a{
+.categories .card a, .cart-total-inner h4, .cart-total-inner h3{
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #FFFFFF;
 }
-.categories h4, .categories h1 {
+.categories h4, .categories h1, .FoodDetails h1 {
   font-family: "Albertus";
+  line-height: 31.5px;
 }
 .categories .left-card a{
   margin-top: 2.375rem;
@@ -259,13 +260,15 @@ nav a:hover:after {
 .categories .right-card a{
   margin-top: 1.063rem;
 }
-.category-page .Table .left-arrow, .FoodDetails .Table .left-arrow-white{
+.category-page .Table .left-arrow, .FoodDetails .Table .left-arrow-white, .checkOut-page .Table .left-arrow, .checkOut-page .TopHeader .CloseBtnDark{
   display: block;
+}
+.checkOut-page .TopHeader .MenuBtn, .Shop-Icon, .CloseBtnDark{
+  display: none;
 }
 .FoodDetails-Box .Food-head{
   text-align: center;
   padding: 0.344rem 1.875rem;
-  line-height: 19px;
 }
 .food-heading{
   padding: 0.625rem 1.25rem;
@@ -283,11 +286,11 @@ nav a:hover:after {
   border-radius: 0.625rem;
   margin: 0.625rem 0;
 }
-.Plus-Minus button, .Plus-Minus h4{
+.Plus-Minus button, .Plus-Minus h4, .checkOut-box .Plus-Minus a{
   padding: 0;
   margin: 0 0.938rem;
 }
-.main-h4 {
+.main-h4, .checkOut-box h3, .cart-total-inner h4, .cart-total-inner h3{
   flex: 1;
 }
 .Food-box{
@@ -304,7 +307,85 @@ nav a:hover:after {
   padding: 0.625rem 1.875rem;
   margin: 0;
 }
-.Add-Cart-Box .Plus-Minus{
+.Add-Cart-Box .Plus-Minus, .checkOut-box .Plus-Minus{
   background-color: transparent;
   margin: 0;
 }
+.checkOut-box h3 {
+  text-align: end;
+}
+.checkOut-box h5{
+  padding: 0.188rem;
+}
+.checkOut-box .last-H5{
+  padding-bottom: 0.313rem;
+}
+
+.delete-btn{
+  color: #000000;
+  margin: 0;
+  justify-content: space-between;
+}
+.checkOut-box .minusBtn{
+  margin-left: 0;
+}
+.checkOut-box .Plus-Minus{
+  padding-bottom: 0;
+}
+.checkOut-box h4{
+  font-family: "Albertus";
+  line-height: 21px;
+}
+.checkOut-box h5 {
+  padding-left: 0.625rem;
+  color: #888888;
+  line-height: 18px;
+}
+.checkOut-box{
+  background-color: #F4F1E8;
+  border-radius: 0.625rem;
+  margin: 0.625rem 0;
+}
+.checkOut-box a{
+  font-family: "Montserrat";
+  color: #572500;
+  text-decoration: underline;
+}
+.AddSlider h2, .cart-total-inner h2{
+  color: #572500;
+}
+.AddSlide .card{
+  margin: 0;
+}
+.AddSlider{
+  padding: 1.25rem 0;
+}
+.cart-total-inner h4, .cart-total-inner h3{
+  color: #000000;
+  padding: 0.313rem 0;
+}
+.cart-total-inner{
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 0.625rem;
+}
+.buttons .ContinueBtn, .checkout{
+  font-size: 0.875rem;
+  background-color: transparent;
+  color: #572500;
+  border: 1px solid #572500;
+}
+.buttons button{
+  width: 100%;
+  margin: 0 0.625rem;
+}
+.buttons .checkout{
+  color: #FFFFFF;
+  background-color: #000000;
+  border: 1px solid #000000;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  display: none;
+}
+/* .checkOut-page .TopHeader {
+  justify-content: center;
+} */
