@@ -52,7 +52,7 @@ button, .cartBtn{
   padding: 0.625rem 0;
   margin: 0.313rem 0;
 }
-header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodDetails, .checkOut-page{
+header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodDetails, .checkOut-page, .thankYou-page, .orderDetails{
   width: 24.563rem;
   margin: auto;
 }
@@ -155,7 +155,7 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
   color: #FFFFFF;
   font-family: "Montserrat";
 }
-.Slider, .Add-Cart-Box, .checkOut-box, .checkOut-inner, .cart-total-inner{
+.Slider, .Add-Cart-Box, .checkOut-box, .checkOut-inner, .cart-total-inner, .orderDetails{
   padding: 1.25rem;
 }
 .Table{
@@ -244,7 +244,7 @@ nav a:hover:after {
   background-color: #572500;
   color: #FFFFFF;
 }
-.categories .card a, .cart-total-inner h4, .cart-total-inner h3{
+.categories .card a, .cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4, .orderDetails-inner h3{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -263,7 +263,7 @@ nav a:hover:after {
 .category-page .Table .left-arrow, .FoodDetails .Table .left-arrow-white, .checkOut-page .Table .left-arrow, .checkOut-page .TopHeader .CloseBtnDark{
   display: block;
 }
-.checkOut-page .TopHeader .MenuBtn, .Shop-Icon, .CloseBtnDark{
+.checkOut-page .TopHeader .MenuBtn, .checkOut-page .TopHeader .Shop-Icon, .CloseBtnDark{
   display: none;
 }
 .FoodDetails-Box .Food-head{
@@ -290,7 +290,7 @@ nav a:hover:after {
   padding: 0;
   margin: 0 0.938rem;
 }
-.main-h4, .checkOut-box h3, .cart-total-inner h4, .cart-total-inner h3{
+.main-h4, .checkOut-box h3, .cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4, .orderDetails-inner h3{
   flex: 1;
 }
 .Food-box{
@@ -314,11 +314,11 @@ nav a:hover:after {
 .checkOut-box h3 {
   text-align: end;
 }
-.checkOut-box h5{
-  padding: 0.188rem;
-}
 .checkOut-box .last-H5{
   padding-bottom: 0.313rem;
+}
+.orderDetails-inner .last-H5{
+  padding-bottom: 0;
 }
 
 .delete-btn{
@@ -336,10 +336,10 @@ nav a:hover:after {
   font-family: "Albertus";
   line-height: 21px;
 }
-.checkOut-box h5 {
-  padding-left: 0.625rem;
+.checkOut-box h5, .orderDetails-inner h5 {
   color: #888888;
   line-height: 18px;
+  padding: 0.188rem 0.188rem 0.188rem 0.625rem;
 }
 .checkOut-box{
   background-color: #F4F1E8;
@@ -351,7 +351,7 @@ nav a:hover:after {
   color: #572500;
   text-decoration: underline;
 }
-.AddSlider h2, .cart-total-inner h2{
+.AddSlider h2, .cart-total-inner h2, .order-received .thankyou{
   color: #572500;
 }
 .AddSlide .card{
@@ -360,7 +360,7 @@ nav a:hover:after {
 .AddSlider{
   padding: 1.25rem 0;
 }
-.cart-total-inner h4, .cart-total-inner h3{
+.cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4 , .orderDetails-inner h3{
   color: #000000;
   padding: 0.313rem 0;
 }
@@ -374,17 +374,39 @@ nav a:hover:after {
   color: #572500;
   border: 1px solid #572500;
 }
-.buttons button{
+.buttons button, .order-received button{
   width: 100%;
   margin: 0 0.625rem;
 }
-.buttons .checkout{
+.buttons .checkout , .order-received button{ 
   color: #FFFFFF;
   background-color: #000000;
   border: 1px solid #000000;
 }
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
   display: none;
+}
+.order-received h2{
+  line-height: 27px;
+}
+.order-received {
+  text-align: center;
+  padding: 1.875rem 3.125rem;
+}
+
+.orderDetails-inner{
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+}
+.orderDetails-inner h5{
+  font-weight: 400;
+}
+.orderDetails-inner h4{
+  font-weight: bolder;
+}
+.orderDetails-inner span {
+  font-size: 1rem;
 }
 /* .checkOut-page .TopHeader {
   justify-content: center;

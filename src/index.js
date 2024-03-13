@@ -15,6 +15,8 @@ import Category from "./Components/Category";
 import FoodDetails from "./Components/FoodDetails";
 import CheckOut from "./Components/CheckOut";
 import AddSlider from "./Components/AddSlider";
+import ThankYouPage from "./Components/ThankYouPage";
+import OrderDetails from "./Components/OrderDetails";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
   {
@@ -40,27 +42,35 @@ const router = createBrowserRouter([
   },
   {
     path: "/Navbar",
-    element: <Navbar/>
+    element: <Navbar />,
   },
   {
     path: "/Slider",
-    element: <Slider/>
+    element: <Slider />,
   },
   {
     path: "/Category",
-    element: <Category/>
+    element: <Category />,
   },
   {
     path: "/FoodDetails",
-    element: <FoodDetails/>
+    element: <FoodDetails />,
   },
   {
     path: "/CheckOut",
-    element: <CheckOut/>
+    element: <CheckOut />,
   },
   {
     path: "/AddSlider",
-    element: <AddSlider/>
+    element: <AddSlider />,
+  },
+  {
+    path: "/ThankYou",
+    element: <ThankYouPage />,
+  },
+  {
+    path: "/OrderDetails",
+    element: <OrderDetails/>
   }
 ]);
 root.render(
