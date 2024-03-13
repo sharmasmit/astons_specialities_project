@@ -17,8 +17,18 @@ function Table() {
             className="left-arrow-white"
           />
         </Link>
-        <h2 style={{ padding: "0.5rem 0", textAlign: "center" }}>
+        <h2
+          style={{ padding: "0.5rem 0", textAlign: "center" }}
+          className="TableTxt"
+        >
           Table No. 01
+        </h2>
+
+        <h2
+          style={{ padding: "0.5rem 0", textAlign: "center" }}
+          className="orderTxt"
+        >
+          Order History
         </h2>
       </div>
     </>

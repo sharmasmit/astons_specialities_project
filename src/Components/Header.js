@@ -27,7 +27,7 @@ function Header() {
               alt="Shop"
               className="Shop-Icon"
             />
-            <span className="Shop-Icon">01</span>
+            <span className="Shop-Icon">0</span>
             <img
               src={require("../Images/CloseBtnDark.png")}
               className="CloseBtnDark"

@@ -52,8 +52,8 @@ button, .cartBtn{
   padding: 0.625rem 0;
   margin: 0.313rem 0;
 }
-header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodDetails, .checkOut-page, .thankYou-page, .orderDetails{
-  width: 24.563rem;
+header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodDetails, .checkOut-page, .thankYou-page, .orderDetails, .orderHistory{
+  max-width: 24.563rem;
   margin: auto;
 }
 
@@ -71,12 +71,13 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
 }
 .TopHeader a span {
   position: absolute;
-  top: 0.4375rem;
-  padding: 0.0625rem;
+  top: 0.9rem;
+  right: 1.438rem;
+  padding: 0.125rem 0.375rem;
   background-color: #000000;
   color: #DBCC97;
   border-radius: 50%;
-  font-size: 0.6669rem;
+  font-size: 0.5rem;
 }
 .sideMenu {
   position: absolute;
@@ -155,7 +156,7 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
   color: #FFFFFF;
   font-family: "Montserrat";
 }
-.Slider, .Add-Cart-Box, .checkOut-box, .checkOut-inner, .cart-total-inner, .orderDetails{
+.Slider, .Add-Cart-Box, .checkOut-box, .checkOut-inner, .cart-total-inner, .orderDetails, .orderHistory-box, .orderHistory-inner{
   padding: 1.25rem;
 }
 .Table{
@@ -224,7 +225,7 @@ nav a:hover:after {
 .card-head h3{
   font-weight: bold;
 }
-.Slide , .buttons{
+.Slide , .buttons, .roundBtns{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,7 +245,7 @@ nav a:hover:after {
   background-color: #572500;
   color: #FFFFFF;
 }
-.categories .card a, .cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4, .orderDetails-inner h3{
+.categories .card a, .cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4, .orderDetails-inner h3, .orderHistory-box h4{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -260,10 +261,10 @@ nav a:hover:after {
 .categories .right-card a{
   margin-top: 1.063rem;
 }
-.category-page .Table .left-arrow, .FoodDetails .Table .left-arrow-white, .checkOut-page .Table .left-arrow, .checkOut-page .TopHeader .CloseBtnDark{
+.category-page .Table .left-arrow, .FoodDetails .Table .left-arrow-white, .checkOut-page .Table .left-arrow, .checkOut-page .TopHeader .CloseBtnDark, .orderHistory .Table .orderTxt, .orderHistory .Table .left-arrow{
   display: block;
 }
-.checkOut-page .TopHeader .MenuBtn, .checkOut-page .TopHeader .Shop-Icon, .CloseBtnDark{
+.Table .orderTxt  ,.checkOut-page .TopHeader .MenuBtn, .checkOut-page .TopHeader .Shop-Icon, .CloseBtnDark, .orderHistory .Table .TableTxt{
   display: none;
 }
 .FoodDetails-Box .Food-head{
@@ -290,7 +291,7 @@ nav a:hover:after {
   padding: 0;
   margin: 0 0.938rem;
 }
-.main-h4, .checkOut-box h3, .cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4, .orderDetails-inner h3{
+.main-h4, .checkOut-box h3, .cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4, .orderDetails-inner h3, .orderHistory-box h4{
   flex: 1;
 }
 .Food-box{
@@ -317,8 +318,11 @@ nav a:hover:after {
 .checkOut-box .last-H5{
   padding-bottom: 0.313rem;
 }
-.orderDetails-inner .last-H5{
+.orderDetails-inner .last-H5, .orderHistory-box .order-review{
   padding-bottom: 0;
+}
+.orderHistory-box .topH1{
+  padding-top: 0;
 }
 
 .delete-btn{
@@ -341,7 +345,7 @@ nav a:hover:after {
   line-height: 18px;
   padding: 0.188rem 0.188rem 0.188rem 0.625rem;
 }
-.checkOut-box{
+.checkOut-box, .orderHistory-box{
   background-color: #F4F1E8;
   border-radius: 0.625rem;
   margin: 0.625rem 0;
@@ -351,7 +355,7 @@ nav a:hover:after {
   color: #572500;
   text-decoration: underline;
 }
-.AddSlider h2, .cart-total-inner h2, .order-received .thankyou{
+.AddSlider h2, .cart-total-inner h2, .order-received .thankyou, .orderHistory-box .order-review{
   color: #572500;
 }
 .AddSlide .card{
@@ -360,7 +364,7 @@ nav a:hover:after {
 .AddSlider{
   padding: 1.25rem 0;
 }
-.cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4 , .orderDetails-inner h3{
+.cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4 , .orderDetails-inner h3, .orderHistory-box h4, .orderHistory-box h5{
   color: #000000;
   padding: 0.313rem 0;
 }
@@ -408,6 +412,39 @@ nav a:hover:after {
 .orderDetails-inner span {
   font-size: 1rem;
 }
-/* .checkOut-page .TopHeader {
-  justify-content: center;
-} */
+.orderHistory-box .dateDetails{
+  color: #888888;
+}
+.orderHistory-box .canceled{
+  color: #CA0808;
+}
+
+.orderHistory-inner .roundBtns button{
+  border-radius: 6.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  color: #572500;
+}
+.roundBtns .prevBtn{
+  background-color: #CCCCCC;
+  margin-right: 3.625rem;
+}
+.roundBtns .centerBtn{
+  background-color: #FFFFFF;
+  margin: 0 0.313rem;
+}
+.roundBtns{
+  padding: 1.25rem 0rem 1.875rem 0rem ;
+}
+.roundBtns .nextBtn{
+  margin-left: 3.625rem;
+  background-color: var(--cream);
+}
+.orderHistory-inner .roundBtns .active{
+  background-color: #572500;
+  color: white;
+}
+.disabled{
+  pointer-events: none;
+}
