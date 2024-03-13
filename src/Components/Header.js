@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const ShowMenu = () => {
-    document.getElementById("SideMenu").style.display = "block";
+    document.getElementById("SideMenu").classList.add("animation");
   };
   const HideMenu = () => {
-    document.getElementById("SideMenu").style.display = "none";
+    document.getElementById("SideMenu").classList.remove("animation");
   };
 
   return (
     <>
       <header>
         <div className="TopHeader">
-          <button type="submit" onClick={ShowMenu} >
+          <button type="submit" onClick={ShowMenu}>
             <img
               src={require("../Images/HamburgerBar.png")}
               alt="HamburgerBar"
@@ -33,15 +33,15 @@ function Header() {
               className="CloseBtnDark"
             />
           </Link>
-        </div>
-        <div className="sideMenu" id="SideMenu">
-          <button type="submit" style={{ float: "right" }} onClick={HideMenu}>
-            <img src={require("../Images/CloseBtn.png")} alt="Close" />
-          </button>
-          <h3 style={{ marginTop: "6.688rem" }}>Menu</h3>
-          <h3>Voucher</h3>
-          <h3>Order History</h3>
-          <h3>Profile</h3>
+          <div className="sideMenu" id="SideMenu">
+            <button type="submit" style={{ float: "right" }} onClick={HideMenu}>
+              <img src={require("../Images/CloseBtn.png")} alt="Close" />
+            </button>
+            <h3 style={{ marginTop: "6.688rem" }}>Menu</h3>
+            <h3>Voucher</h3>
+            <h3>Order History</h3>
+            <h3>Profile</h3>
+          </div>
         </div>
       </header>
     </>

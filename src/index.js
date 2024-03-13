@@ -18,6 +18,7 @@ import AddSlider from "./Components/AddSlider";
 import ThankYouPage from "./Components/ThankYouPage";
 import OrderDetails from "./Components/OrderDetails";
 import OrderHistory from "./Components/OrderHistory";
+import OrderHistoryDetails from "./Components/OrderHistoryDetails";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
   {
@@ -77,6 +78,10 @@ const router = createBrowserRouter([
     path: "OrderHistory",
     element: <OrderHistory />,
   },
+  {
+    path: "HistoryDetails",
+    element: <OrderHistoryDetails/>
+  }
 ]);
 root.render(
   <React.StrictMode>

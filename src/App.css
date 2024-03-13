@@ -52,7 +52,7 @@ button, .cartBtn{
   padding: 0.625rem 0;
   margin: 0.313rem 0;
 }
-header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodDetails, .checkOut-page, .thankYou-page, .orderDetails, .orderHistory{
+header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodDetails, .checkOut-page, .thankYou-page, .orderDetails, .orderHistory, .orderHistory-Details, .sideMenu{
   max-width: 24.563rem;
   margin: auto;
 }
@@ -82,10 +82,11 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
 .sideMenu {
   position: absolute;
   top: 0;
-  display: none;
+  left: -14.375rem;
+  /* display: none; */
   padding: 1.25rem 1.875rem;
   width: 14.375rem;
-  height: 100%;
+  height: 100vh;
   background-image: url(./Images/LeftSizeMenu.png);
   background-position: center;
   background-size: cover;
@@ -97,8 +98,12 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
   padding: 0.438rem;
   margin: 0;
 }
-.MenuOpen{
+/* .MenuOpen{
   display: block;
+} */
+.animation{
+  /* transition: 0.5s; */
+  left: 0;
 }
 .sideMenu h3{
   padding: 0.625rem 0;
@@ -245,7 +250,7 @@ nav a:hover:after {
   background-color: #572500;
   color: #FFFFFF;
 }
-.categories .card a, .cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4, .orderDetails-inner h3, .orderHistory-box h4{
+.categories .card a, .cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4, .orderDetails-inner h3, .orderHistory-box h4,.History-details{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -261,10 +266,10 @@ nav a:hover:after {
 .categories .right-card a{
   margin-top: 1.063rem;
 }
-.category-page .Table .left-arrow, .FoodDetails .Table .left-arrow-white, .checkOut-page .Table .left-arrow, .checkOut-page .TopHeader .CloseBtnDark, .orderHistory .Table .orderTxt, .orderHistory .Table .left-arrow{
+.category-page .Table .left-arrow, .FoodDetails .Table .left-arrow-white, .checkOut-page .Table .left-arrow, .checkOut-page .TopHeader .CloseBtnDark, .orderHistory .Table .orderTxt, .orderHistory .Table .left-arrow, .orderHistory-Details .Table .orderTxt, .orderHistory-Details .Table .left-arrow{
   display: block;
 }
-.Table .orderTxt  ,.checkOut-page .TopHeader .MenuBtn, .checkOut-page .TopHeader .Shop-Icon, .CloseBtnDark, .orderHistory .Table .TableTxt{
+.Table .orderTxt  ,.checkOut-page .TopHeader .MenuBtn, .checkOut-page .TopHeader .Shop-Icon, .CloseBtnDark, .orderHistory .Table .TableTxt, .orderHistory-Details .Table .TableTxt{
   display: none;
 }
 .FoodDetails-Box .Food-head{
@@ -355,7 +360,7 @@ nav a:hover:after {
   color: #572500;
   text-decoration: underline;
 }
-.AddSlider h2, .cart-total-inner h2, .order-received .thankyou, .orderHistory-box .order-review{
+.AddSlider h2, .cart-total-inner h2, .order-received .thankyou, .orderHistory-box .order-review, .History-details .order-review{
   color: #572500;
 }
 .AddSlide .card{
@@ -364,7 +369,7 @@ nav a:hover:after {
 .AddSlider{
   padding: 1.25rem 0;
 }
-.cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4 , .orderDetails-inner h3, .orderHistory-box h4, .orderHistory-box h5{
+.cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4 , .orderDetails-inner h3, .orderHistory-box h4, .orderHistory-box h5, .History-details h1, .History-details h5{
   color: #000000;
   padding: 0.313rem 0;
 }
@@ -412,7 +417,7 @@ nav a:hover:after {
 .orderDetails-inner span {
   font-size: 1rem;
 }
-.orderHistory-box .dateDetails{
+.orderHistory-box .dateDetails, .History-details .date{
   color: #888888;
 }
 .orderHistory-box .canceled{
@@ -447,4 +452,7 @@ nav a:hover:after {
 }
 .disabled{
   pointer-events: none;
+}
+.historyDetails-inner .History-details{
+  padding: 1.563rem 1.25rem;
 }
