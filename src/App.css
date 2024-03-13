@@ -53,7 +53,7 @@ button, .cartBtn{
   margin: 0.313rem 0;
 }
 header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodDetails, .checkOut-page, .thankYou-page, .orderDetails, .orderHistory, .orderHistory-Details, .sideMenu, .Add-Cart-Box{
-  max-width: 24.563rem;
+  width: 24.563rem;
   margin: auto;
 }
 
