@@ -20,7 +20,7 @@ function Header() {
               className="MenuBtn"
             />
           </button>
-          <Link to="/Home"><img src={require("../Images/AstonsLogo.png")} alt="Logo" /></Link>
+          <img src={require("../Images/AstonsLogo.png")} alt="Logo" />
           <Link to={"#"}>
             <img
               src={require("../Images/ShopIcon.png")}
@@ -38,7 +38,8 @@ function Header() {
               <img src={require("../Images/CloseBtn.png")} alt="Close" />
             </button>
             <Link to="/Home" ><h3 style={{ marginTop: "6.688rem" }}>Menu</h3></Link>
-            <Link to="/OrderHistory"></Link><h3>Order History</h3>
+            <Link to="/Category"><h3>Category</h3></Link>
+            <Link to="/OrderHistory"><h3>Order History</h3></Link>
             {/* <h3>Profile</h3> */}
           </div>
         </div>
