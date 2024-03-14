@@ -70,6 +70,9 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
   background: white;
   z-index: 999999;
 }
+.active{
+  color: var(--cream);
+}
 
 .TopHeader button{
   background-color: transparent;
@@ -210,11 +213,7 @@ nav a:hover:after {
   width: 100%;
   background: black;
 }
-.sticky{
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+
 .Home-Page .viewMore, .delete-btn{
   color: #572500;
   display: flex;
@@ -464,7 +463,7 @@ nav a:hover:after {
   border-radius: 1.25rem;
   padding: 1.25rem;
 }
-.orderDetails-inner h5, .thankYou-page .thankyou, .category-page h3{
+.orderDetails-inner h5, .thankYou-page .thankyou, .category-page h3, .orderDetails-inner .orderPrice{
   font-weight: 400;
 }
 .orderDetails-inner h4{

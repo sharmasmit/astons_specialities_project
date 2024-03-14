@@ -130,7 +130,7 @@ function CheckOut() {
                 GST 8% <span className="price-txt">$10.45</span>
               </h4>
               <h3 className="last-H5">
-                Subtotal <span className="price-txt">$141.05</span>
+                Total <span className="price-txt">$141.05</span>
               </h3>
             </div>
           </div>

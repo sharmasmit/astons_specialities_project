@@ -66,10 +66,10 @@ function OrderDetails() {
             }}
           />
 
-          <h4>
+          <h4 className="orderPrice">
             Subtotal <span>$130.60</span>
           </h4>
-          <h4>
+          <h4 className="orderPrice">
             GST 8% <span>$10.45</span>
           </h4>
           <h3 className="last-H5">

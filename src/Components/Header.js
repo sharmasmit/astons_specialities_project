@@ -39,9 +39,9 @@ function Header() {
             <button type="submit" style={{ float: "right" }} onClick={HideMenu}>
               <img src={require("../Images/CloseBtn.png")} alt="Close" />
             </button>
-            <Link to="/Home" ><h3 style={{ marginTop: "6.688rem" }}>Menu</h3></Link>
-            <Link to="/Category"><h3>Category</h3></Link>
-            <Link to="/OrderHistory"><h3>Order History</h3></Link>
+            <Link to="/Home" ><h3 style={{ marginTop: "6.688rem" }} className="btn active">Menu</h3></Link>
+            <Link to="/Category" ><h3 className="btn">Category</h3></Link>
+            <Link to="/OrderHistory" ><h3 className="btn">Order History</h3></Link>
             {/* <h3>Profile</h3> */}
           </div>
         </div>
