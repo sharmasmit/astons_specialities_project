@@ -205,7 +205,7 @@ nav a:hover:after {
   width: 100%;
   background: black;
 }
-.card a, .delete-btn{
+.viewMore, .delete-btn{
   color: #572500;
   display: flex;
   margin-top: 2.5rem;
@@ -271,10 +271,10 @@ nav a:hover:after {
   font-family: "Albertus";
   line-height: 31.5px;
 }
-.categories .left-card a{
+.categories .left-card .viewMore{
   margin-top: 2.375rem;
 }
-.categories .right-card a{
+.categories .right-card .viewMore{
   margin-top: 1.063rem;
 }
 .category-page .Table .left-arrow, .FoodDetails .Table .left-arrow-white, .checkOut-page .Table .left-arrow, .checkOut-page .TopHeader .CloseBtnDark, .orderHistory .Table .orderTxt, .orderHistory .Table .left-arrow, .orderHistory-Details .Table .orderTxt, .orderHistory-Details .Table .left-arrow{
