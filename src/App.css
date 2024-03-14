@@ -58,11 +58,17 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
 }
 
 .TopHeader, .Add-Cart-Box{
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.625rem 1.875rem;
+}
+.TopHeader{
+  top: 0;
+  width: 24.563rem;
+  background: white;
+  z-index: 999999;
 }
 
 .TopHeader button{
@@ -203,6 +209,11 @@ nav a::after {
 nav a:hover:after {
   width: 100%;
   background: black;
+}
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .Home-Page .viewMore, .delete-btn{
   color: #572500;

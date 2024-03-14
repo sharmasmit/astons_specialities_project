@@ -12,7 +12,7 @@ function Header() {
   return (
     <>
       <header>
-        <div className="TopHeader">
+        <div className="TopHeader" id="TopHeader">
           <button type="submit" onClick={ShowMenu}>
             <img
               src={require("../Images/HamburgerBar.png")}

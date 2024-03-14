@@ -18,14 +18,14 @@ function Table() {
           />
         </Link>
         <h2
-          style={{ padding: "0.5rem 0", textAlign: "center" }}
+          style={{ padding: "0.5rem 0", textAlign: "center", marginTop: "4.375rem" }}
           className="TableTxt"
         >
           Table No. 01
         </h2>
 
         <h2
-          style={{ padding: "0.5rem 0", textAlign: "center" }}
+          style={{ padding: "0.5rem 0", textAlign: "center", marginTop: "4.375rem" }}
           className="orderTxt"
         >
           Order History
