@@ -16,7 +16,7 @@ function ThankYouPage() {
             <h2 style={{ fontWeight: "bold" }}>Order Received!</h2>
             <h2
               className="thankyou"
-              style={{ fontWeight: "400", paddingTop: "0.625rem" }}
+              style={{ paddingTop: "0.625rem" }}
             >
               Thank You!
             </h2>

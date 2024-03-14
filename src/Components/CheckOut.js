@@ -139,10 +139,12 @@ function CheckOut() {
           className="buttons"
           style={{ padding: "0.625rem", paddingBottom: "3.125rem" }}
         >
-          <Link to="/Home"></Link>
+          <Link to="/Home">
           <button type="submit" className="ContinueBtn">
             Continue Order
           </button>
+          </Link>
+          
           <Link to="/Thankyou">
             <button type="submit" className="checkout">
               Checkout

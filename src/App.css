@@ -5,7 +5,7 @@
 }
 @font-face{
   font-family: "Albertus";
-  src: url(./Fonts/AlbertusBold.ttf), url(./Fonts/AlbertusMediumRegular.ttf);
+  src: url(./Fonts/AlbertusMediumRegular.ttf);
 }
 @font-face {
   font-family: "Poppins";
@@ -103,7 +103,6 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
   display: block;
 } */
 .animation{
-  /* transition: 0.5s; */
   left: 0;
 }
 .sideMenu h3{
@@ -385,6 +384,7 @@ nav a:hover:after {
 .AddSlider h2, .cart-total-inner h2, .order-received .thankyou, .orderHistory-box .order-review, .History-details .order-review{
   color: #572500;
 }
+
 .AddSlide .card{
   margin: 0;
 }
@@ -443,10 +443,11 @@ nav a:hover:after {
   border-radius: 1.25rem;
   padding: 1.25rem;
 }
-.orderDetails-inner h5{
+.orderDetails-inner h5, .thankYou-page .thankyou{
   font-weight: 400;
 }
 .orderDetails-inner h4{
+  font-family: "Albertus";
   font-weight: bolder;
 }
 .orderDetails-inner span {
