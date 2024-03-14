@@ -254,10 +254,21 @@ nav a:hover:after {
   background-color: #FFFFFF;
 }
 .top-round{
-  padding: 1.875rem;
+  padding-top: 3.4rem;
   position: relative;
-  margin-top: -50px;
+  margin-top: -55px;
   background-color: #FFFFFF;
+  clip-path: ellipse(55% 100% at 50% 100%);
+  transition: 0.5s;
+  text-align: center;
+}
+.FoodDetails-Box .top-round {
+  padding-top: 3rem;
+  position: relative;
+  margin-top: -61px;
+  background-color: #FFFFFF;
+  clip-path: ellipse(70% 100% at 50% 100%);
+  text-align: center;
 }
 .categories .card{
   background-color: #572500;
@@ -322,7 +333,6 @@ nav a:hover:after {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   position: fixed;
   bottom: 0;
-  width: 100%;
 }
 .cartBtn{
   background-color: #000000;
@@ -443,7 +453,7 @@ nav a:hover:after {
   border-radius: 1.25rem;
   padding: 1.25rem;
 }
-.orderDetails-inner h5, .thankYou-page .thankyou{
+.orderDetails-inner h5, .thankYou-page .thankyou, .category-page h3{
   font-weight: 400;
 }
 .orderDetails-inner h4{

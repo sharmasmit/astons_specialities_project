@@ -11,9 +11,9 @@ function Category() {
         <Table />
         <img src={require("../Images/CategoriesBG.png")} />
         <div className="categories">
-          <div className="top-round"></div>
-          <h1 style={{ textAlign: "center" }}>Legendary Steaks</h1>
-
+          <div className="top-round">
+          <h1>Legendary Steaks</h1>
+          </div>
           <div className="category-child">
             
             <div className="left-card card">

@@ -109,6 +109,8 @@ function FoodDetails() {
         <Table />
         <img src={require("../Images/FoodDetailsBG.png")} />
         <div className="FoodDetails-Box">
+          <div className="top-round">
+
           <h1 className="Food-head">New York Strip</h1>
           <h1 className="Food-head" style={{ fontWeight: "400" }}>
             $22.90
@@ -123,6 +125,7 @@ function FoodDetails() {
           >
             New York Strip Loin charbroiled to your preferred doneness
           </h4>
+          </div>
 
           <h3 className="food-heading">Choice of Doneness</h3>
           <div className="Food-box">
