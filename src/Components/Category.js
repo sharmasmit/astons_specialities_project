@@ -63,7 +63,7 @@ function Category() {
             <div className="left-card card">
               <img src={require("../Images/Category-left-img.png")} />
               <div className="card-head">
-                <h4>New York Strip</h4>
+                <Link to="/FoodDetails"><h4>New York Strip</h4></Link>
                 <Link to="/FoodDetails" style={{}} className="viewMore">
                   <h3>$22..90</h3>
                   <img src={require("../Images/Add-Plus.png")} />
@@ -74,7 +74,7 @@ function Category() {
             <div className="right-card card">
               <img src={require("../Images/Category-right-img.png")} />
               <div className="card-head">
-                <h4>Japanese A3 Wagyu Steak</h4>
+                <Link to="/FoodDetails"><h4>Japanese A3 Wagyu Steak</h4></Link>
                 <Link to="/FoodDetails" style={{}} className="viewMore">
                   <h3>$22..90</h3>
                   <img src={require("../Images/Add-Plus.png")} />
@@ -85,7 +85,7 @@ function Category() {
             <div className="left-card card">
               <img src={require("../Images/Category-left-img.png")} />
               <div className="card-head">
-                <h4>New York Strip</h4>
+                <Link to="/FoodDetails"><h4>New York Strip</h4></Link>
                 <Link to="/FoodDetails" style={{}} className="viewMore">
                   <h3>$22..90</h3>
                   <img src={require("../Images/Add-Plus.png")} />
@@ -96,7 +96,7 @@ function Category() {
             <div className="right-card card">
               <img src={require("../Images/Category-right-img.png")} />
               <div className="card-head">
-                <h4>Japanese A3 Wagyu Steak</h4>
+                <Link to="/FoodDetails"><h4>Japanese A3 Wagyu Steak</h4></Link>
                 <Link to="/FoodDetails" style={{}} className="viewMore">
                   <h3>$22..90</h3>
                   <img src={require("../Images/Add-Plus.png")} />

@@ -205,7 +205,7 @@ nav a:hover:after {
   width: 100%;
   background: black;
 }
-.viewMore, .delete-btn{
+.Home-Page .viewMore, .delete-btn{
   color: #572500;
   display: flex;
   margin-top: 2.5rem;

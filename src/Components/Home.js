@@ -34,7 +34,7 @@ function Home() {
             <img src={require("../Images/Startars.png")} alt="Promotion" />
             <div className="card-head">
               <h3>Starters</h3>
-              <Link to="/Category">
+              <Link to="/Category" className="viewMore">
                 <h4>View More</h4>
                 <img
                   src={require("../Images/RightArrow.png")}
@@ -49,7 +49,7 @@ function Home() {
             <div className="card-head">
               <h3>Entree</h3>
               <h5>(includes 2 Side Dishes)</h5>
-              <Link to="/Category">
+              <Link to="/Category" className="viewMore">
                 <h4>View More</h4>
                 <img
                   src={require("../Images/RightArrow.png")}
@@ -67,7 +67,7 @@ function Home() {
             <div className="card-head">
               <h3>Legendary Steak</h3>
               <h5>(includes 2 Side Dishes)</h5>
-              <Link to="/Category">
+              <Link to="/Category" className="viewMore">
                 <h4>View More</h4>
                 <img
                   src={require("../Images/RightArrow.png")}
@@ -85,7 +85,7 @@ function Home() {
             <div className="card-head">
               <h3>Grillworks Chicken</h3>
               <h5>(includes 2 Side Dishes)</h5>
-              <Link to="/Category">
+              <Link to="/Category" className="viewMore">
                 <h4>View More</h4>
                 <img
                   src={require("../Images/RightArrow.png")}
@@ -100,7 +100,7 @@ function Home() {
             <div className="card-head">
               <h3>Fisherman's Pride</h3>
               <h5>(includes 2 Side Dishes)</h5>
-              <Link to="/Category">
+              <Link to="/Category" className="viewMore">
                 <h4>View More</h4>
                 <img
                   src={require("../Images/RightArrow.png")}
