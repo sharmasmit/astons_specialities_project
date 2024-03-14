@@ -6,14 +6,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 
 function FoodDetails() {
-  const [count, setCount] = useState(0);
+  let [count, setCount] = useState(0);
 
-  function imcrementOrder(){
+  function incrementCount() {
     count = count + 1;
     setCount(count);
   }
-
-  function decrementOrder() {
+  function decrementCount() {
     count = count - 1;
     setCount(count);
   }
@@ -44,55 +43,55 @@ function FoodDetails() {
           <div className="Food-box">
             <div className="Plus-Minus">
               <h4 className="main-h4">Rare</h4>
-              <button type="submit" onClick={decrementOrder} className="minusBtn">
+              <button type="submit" onClick={decrementCount} className="minusBtn">
                 <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">{count}</h4>
-              <button type="submit" onClick={imcrementOrder} className="plusBtn">
+              <button type="submit" onClick={incrementCount} className="plusBtn">
                 <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">Medium Rare</h4>
-              <button type="submit" onClick={decrementOrder} className="minusBtn">
+              <button type="submit" onClick={decrementCount} className="minusBtn">
                 <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">{count}</h4>
-              <button type="submit" onClick={imcrementOrder} className="plusBtn">
+              <button type="submit" onClick={incrementCount} className="plusBtn">
                 <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">Medium</h4>
-              <button type="submit" onClick={decrementOrder} className="minusBtn">
+              <button type="submit" onClick={decrementCount} className="minusBtn">
                 <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">{count}</h4>
-              <button type="submit" onClick={imcrementOrder} className="plusBtn">
+              <button type="submit" onClick={incrementCount} className="plusBtn">
                 <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">Medium Well</h4>
-              <button type="submit" onClick={decrementOrder} className="minusBtn">
+              <button type="submit" onClick={decrementCount} className="minusBtn">
                 <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">{count}</h4>
-              <button type="submit" onClick={imcrementOrder} className="plusBtn">
+              <button type="submit" onClick={incrementCount} className="plusBtn">
                 <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">Well Done</h4>
-              <button type="submit" onClick={decrementOrder} className="minusBtn">
+              <button type="submit" onClick={decrementCount} className="minusBtn">
                 <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">{count}</h4>
-              <button type="submit" onClick={imcrementOrder} className="plusBtn">
+              <button type="submit" onClick={incrementCount} className="plusBtn">
                 <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
@@ -101,77 +100,77 @@ function FoodDetails() {
           <div className="Food-box" style={{ paddingBottom: "6.25rem" }}>
             <div className="Plus-Minus">
               <h4 className="main-h4">Baked Potato</h4>
-              <button type="submit" onClick={decrementOrder} className="minusBtn">
+              <button type="submit" onClick={decrementCount} className="minusBtn">
                 <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">{count}</h4>
-              <button type="submit" onClick={imcrementOrder} className="plusBtn">
+              <button type="submit" onClick={incrementCount} className="plusBtn">
                 <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">French Fries</h4>
-              <button type="submit" onClick={decrementOrder} className="minusBtn">
+              <button type="submit" onClick={decrementCount} className="minusBtn">
                 <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">{count}</h4>
-              <button type="submit" onClick={imcrementOrder} className="plusBtn">
+              <button type="submit" onClick={incrementCount} className="plusBtn">
                 <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">Tasty Rice</h4>
-              <button type="submit" onClick={decrementOrder} className="minusBtn">
+              <button type="submit" onClick={decrementCount} className="minusBtn">
                 <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">{count}</h4>
-              <button type="submit" onClick={imcrementOrder} className="plusBtn">
+              <button type="submit" onClick={incrementCount} className="plusBtn">
                 <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">Corn Niblets</h4>
-              <button type="submit" onClick={decrementOrder} className="minusBtn">
+              <button type="submit" onClick={decrementCount} className="minusBtn">
                 <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">{count}</h4>
-              <button type="submit" onClick={imcrementOrder} className="plusBtn">
+              <button type="submit" onClick={incrementCount} className="plusBtn">
                 <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">Coleslaw</h4>
-              <button type="submit" onClick={decrementOrder} className="minusBtn">
+              <button type="submit" onClick={decrementCount} className="minusBtn">
                 <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">{count}</h4>
-              <button type="submit" onClick={imcrementOrder} className="plusBtn">
+              <button type="submit" onClick={incrementCount} className="plusBtn">
                 <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
 
             <div className="Plus-Minus">
               <h4 className="main-h4">Mushrooms Soup</h4>
-              <button type="submit" onClick={decrementOrder} className="minusBtn">
+              <button type="submit" onClick={decrementCount} className="minusBtn">
                 <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">{count}</h4>
-              <button type="submit" onClick={imcrementOrder} className="plusBtn">
+              <button type="submit" onClick={incrementCount} className="plusBtn">
                 <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
           </div>
           <div className="Add-Cart-Box">
             <div className="Plus-Minus">
-              <button type="submit" onClick={decrementOrder} className="minusBtn">
+              <button type="submit" onClick={decrementCount} className="minusBtn">
                 <FontAwesomeIcon icon={faMinus} />
               </button>
               <h4 className="zero">{count}</h4>
-              <button type="submit" onClick={imcrementOrder} className="plusBtn">
+              <button type="submit" onClick={incrementCount} className="plusBtn">
                 <FontAwesomeIcon icon={faPlus} />
               </button>
             </div>
