@@ -209,7 +209,7 @@ nav a:hover:after {
   color: #572500;
   display: flex;
   margin-top: 2.5rem;
-  /* justify-content: right; */
+  justify-content: right;
 }
 .Product-Categories, .category-child{
   padding: 0.625rem;
