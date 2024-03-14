@@ -20,7 +20,9 @@ function Header() {
               className="MenuBtn"
             />
           </button>
+          <Link to="/Home">
           <img src={require("../Images/AstonsLogo.png")} alt="Logo" />
+          </Link>
           <Link to={"#"}>
             <img
               src={require("../Images/ShopIcon.png")}
