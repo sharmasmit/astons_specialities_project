@@ -20,7 +20,7 @@ function Header() {
               className="MenuBtn"
             />
           </button>
-          <img src={require("../Images/AstonsLogo.png")} alt="Logo" />
+          <Link to="/Home"><img src={require("../Images/AstonsLogo.png")} alt="Logo" /></Link>
           <Link to={"#"}>
             <img
               src={require("../Images/ShopIcon.png")}
@@ -37,10 +37,9 @@ function Header() {
             <button type="submit" style={{ float: "right" }} onClick={HideMenu}>
               <img src={require("../Images/CloseBtn.png")} alt="Close" />
             </button>
-            <h3 style={{ marginTop: "6.688rem" }}>Menu</h3>
-            <h3>Voucher</h3>
-            <h3>Order History</h3>
-            <h3>Profile</h3>
+            <Link to="/Home" ><h3 style={{ marginTop: "6.688rem" }}>Menu</h3></Link>
+            <Link to="/OrderHistory"></Link><h3>Order History</h3>
+            {/* <h3>Profile</h3> */}
           </div>
         </div>
       </header>
