@@ -229,8 +229,11 @@ nav a:hover:after {
   padding: 0.625rem;
 }
 .card-head h3{
-  font-weight: 400;
+  font-weight: bold;
   line-height: 24px;
+}
+.Home-Page .card-head h3, .Home-Page .card-head h5{
+  color: #000000;
 }
 .card-head h4{
   line-height: 19px;

@@ -16,7 +16,7 @@ function Home() {
           <Slider />
         </div>
         <div className="Product-Categories">
-          <div className="card-1 card">
+          <Link to="/Category"><div className="card-1 card">
             <img src={require("../Images/Promotion.png")} alt="Promotion" />
             <div className="card-head">
               <h3>Promotion</h3>
@@ -28,9 +28,10 @@ function Home() {
                 />
               </Link>
             </div>
-          </div>
+          </div></Link>
+          
 
-          <div className="card-2 card">
+          <Link to="/Category"><div className="card-2 card">
             <img src={require("../Images/Startars.png")} alt="Promotion" />
             <div className="card-head">
               <h3>Starters</h3>
@@ -43,8 +44,9 @@ function Home() {
               </Link>
             </div>
           </div>
+          </Link>
 
-          <div className="card-3 card">
+          <Link to="/Category"><div className="card-3 card">
             <img src={require("../Images/Entree.png")} alt="Entree" />
             <div className="card-head">
               <h3>Entree</h3>
@@ -57,9 +59,9 @@ function Home() {
                 />
               </Link>
             </div>
-          </div>
+          </div></Link>
 
-          <div className="card-4 card">
+          <Link to="/Category"><div className="card-4 card">
             <img
               src={require("../Images/LegendarySteak.png")}
               alt="LegendarySteak"
@@ -75,9 +77,9 @@ function Home() {
                 />
               </Link>
             </div>
-          </div>
+          </div></Link>
 
-          <div className="card-5 card">
+          <Link to="/Category"><div className="card-5 card">
             <img
               src={require("../Images/LemonLimeChicken.png")}
               alt="LegendarySteak"
@@ -93,9 +95,9 @@ function Home() {
                 />
               </Link>
             </div>
-          </div>
+          </div></Link>
 
-          <div className="card-6 card">
+          <Link to="/Category"><div className="card-6 card">
             <img src={require("../Images/Fisherman.png")} alt="FisherMan" />
             <div className="card-head">
               <h3>Fisherman's Pride</h3>
@@ -108,7 +110,7 @@ function Home() {
                 />
               </Link>
             </div>
-          </div>
+          </div></Link>
         </div>
       </div>
     </>
