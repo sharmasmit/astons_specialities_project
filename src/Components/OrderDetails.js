@@ -73,7 +73,7 @@ function OrderDetails() {
             GST 8% <span>$10.45</span>
           </h4>
           <h3 className="last-H5">
-            Total <span>$141.05</span>
+            Total <span style={{fontWeight: "bold"}}>$141.05</span>
           </h3>
         </div>
       </div>
