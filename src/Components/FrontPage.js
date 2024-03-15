@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import FrontLogo from "../Images/AstonsFrontLogo.svg";
+
 
 function FrontPage() {
   return (
     <>
       <div className="FrontPage">
         <div className="frontPage-inner">
-          <img src={require("../Images/AstonsFrontLogo.png")} alt="Logo" />
+          <img src={FrontLogo} alt="Logo" />
           <br />
           <Link to="/Home">
             <button className="loginBtn" style={{ marginTop: "27.5rem" }}>

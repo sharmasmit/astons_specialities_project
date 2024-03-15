@@ -1,5 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Shop from "../Images/ShopIcon.svg";
+import DarkLogo from "../Images/AstonsMenuLogo.svg";
+import HamburgerBar from "../Images/hamburgerbar.svg";
+
+
 
 function Header() {
   const ShowMenu = () => {
@@ -15,17 +20,17 @@ function Header() {
         <div className="TopHeader" id="TopHeader">
           <button type="submit" onClick={ShowMenu}>
             <img
-              src={require("../Images/HamburgerBar.png")}
+              src={HamburgerBar}
               alt="HamburgerBar"
               className="MenuBtn"
             />
           </button>
           <Link to="/Home">
-          <img src={require("../Images/AstonsLogo.png")} alt="Logo" />
+          <img src={DarkLogo} alt="Logo" />
           </Link>
           <Link to={"#"}>
             <img
-              src={require("../Images/ShopIcon.png")}
+              src={Shop}
               alt="Shop"
               className="Shop-Icon"
             />

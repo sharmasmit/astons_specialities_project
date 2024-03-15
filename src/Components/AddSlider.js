@@ -23,7 +23,7 @@ function AddSlider() {
             <img src={require("../Images/IcedLemonTea.png")} />
             <div className="card-head">
               <h4>New York Strip</h4>
-              <Link style={{}} className="viewMore">
+              <Link className="viewMore">
                 <h3>$2.90</h3>
                 <FontAwesomeIcon icon={faPlus} />
               </Link>
@@ -35,7 +35,7 @@ function AddSlider() {
             <img src={require("../Images/FrenchFries.png")} />
             <div className="card-head">
               <h4>French Fries</h4>
-              <Link style={{}} className="viewMore">
+              <Link className="viewMore">
                 <h3>$4.90</h3>
                 <FontAwesomeIcon icon={faPlus} />
               </Link>
@@ -47,7 +47,7 @@ function AddSlider() {
             <img src={require("../Images/ClassicCheeseburger.png")} />
             <div className="card-head">
               <h4>Burger</h4>
-              <Link style={{}} className="viewMore">
+              <Link className="viewMore">
                 <h3>$7.90</h3>
                 <FontAwesomeIcon icon={faPlus} />
               </Link>

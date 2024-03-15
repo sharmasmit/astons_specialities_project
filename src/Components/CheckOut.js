@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, React } from "react";
 import Header from "./Header";
 import Table from "./Table";
 import { Link } from "react-router-dom";
@@ -7,6 +7,32 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 
 function CheckOut() {
+
+ const [count1, setCount1] = useState(1);
+  const [count2, setCount2] = useState(1);
+  const [count3, setCount3] = useState(1);
+  const [count4, setCount4] = useState(1);
+
+  const [editMode1, setEditMode1] = useState(false);
+  const toggleEditMode1 = () => {
+    setEditMode1(!editMode1);
+  }
+
+  const [editMode2, setEditMode2] = useState(false);
+  const toggleEditMode2 = () => {
+    setEditMode2(!editMode2);
+  }
+
+  const [editMode3, setEditMode3] = useState(false);
+  const toggleEditMode3 = () => {
+    setEditMode3(!editMode3);
+  }
+
+  const [editMode4, setEditMode4] = useState(false);
+  const toggleEditMode4 = () => {
+    setEditMode4(!editMode4);
+  }
+  
   return (
     <>
       <div className="checkOut-page">
@@ -24,15 +50,17 @@ function CheckOut() {
             <h5>1 x Baked Potato</h5>
             <h5 className="last-H5">1 x Coleslaw</h5>
             <div className="Plus-Minus">
-              <button type="submit" className="minusBtn">
+              <button type="submit" onClick={() => setCount1(count1 - 1)} className={`minusBtn ${editMode1 ? "disabled" : ""}`} disabled={editMode1}>
                 <FontAwesomeIcon icon={faMinus} />
               </button>
-              <h4 className="zero">1</h4>
-              <button type="submit" className="plusBtn">
+              <h4 className="zero">{count1}</h4>
+              <button type="submit" onClick={() => setCount1(count1 + 1)} className={`plusBtn ${editMode1 ? "disabled" : ""}`} disabled={editMode1}>
                 <FontAwesomeIcon icon={faPlus} />
               </button>
 
-              <Link to="#">Edit</Link>
+              <Link to="#" onClick={toggleEditMode1}>
+                {editMode1 ? "Done" : "Edit"}
+              </Link>
 
               <h3>$22.90</h3>
             </div>
@@ -49,15 +77,17 @@ function CheckOut() {
             <h5>1 x Tasty Riice</h5>
             <h5 className="last-H5">1 x French Fries</h5>
             <div className="Plus-Minus">
-              <button type="submit" className="minusBtn">
+              <button type="submit" onClick={() => setCount2(count2 - 1)} className={`minusBtn ${editMode2 ? "disabled" : ""}`} disabled={editMode2}>
                 <FontAwesomeIcon icon={faMinus} />
               </button>
-              <h4 className="zero">1</h4>
-              <button type="submit" className="plusBtn">
+              <h4 className="zero">{count2}</h4>
+              <button type="submit" onClick={() => setCount2(count2 + 1)} className={`plusBtn ${editMode2 ? "disabled" : ""}`} disabled={editMode2}>
                 <FontAwesomeIcon icon={faPlus} />
               </button>
 
-              <Link to="#">Edit</Link>
+              <Link to="#" onClick={toggleEditMode2}>
+                {editMode2 ? "Done" : "Edit"}
+              </Link>
 
               <h3>$47.90</h3>
             </div>
@@ -74,15 +104,17 @@ function CheckOut() {
             <h5>1 x French Fries</h5>
             <h5 className="last-H5">1 x Corn Niblets</h5>
             <div className="Plus-Minus">
-              <button type="submit" className="minusBtn">
+              <button type="submit" onClick={() => setCount3(count3 - 1)} className={`minusBtn ${editMode3 ? "disabled" : ""}`} disabled={editMode3}>
                 <FontAwesomeIcon icon={faMinus} />
               </button>
-              <h4 className="zero">1</h4>
-              <button type="submit" className="plusBtn">
+              <h4 className="zero">{count3}</h4>
+              <button type="submit" onClick={() => setCount3(count3 + 1)} className={`plusBtn ${editMode3 ? "disabled" : ""}`} disabled={editMode3}>
                 <FontAwesomeIcon icon={faPlus} />
               </button>
 
-              <Link to="#">Edit</Link>
+              <Link to="#" onClick={toggleEditMode3}>
+                {editMode3 ? "Done" : "Edit"}
+              </Link>
 
               <h3>$32.90</h3>
             </div>
@@ -99,15 +131,17 @@ function CheckOut() {
             <h5>1 x Baked Potato</h5>
             <h5 className="last-H5">1 x Corn Niblets</h5>
             <div className="Plus-Minus">
-              <button type="submit" className="minusBtn">
+              <button type="submit" onClick={() => setCount4(count4 - 1)} className={`minusBtn ${editMode4 ? "disabled" : ""}`} disabled={editMode4}>
                 <FontAwesomeIcon icon={faMinus} />
               </button>
-              <h4 className="zero">1</h4>
-              <button type="submit" className="plusBtn">
+              <h4 className="zero">{count4}</h4>
+              <button type="submit" onClick={() => setCount4(count4 + 1)} className={`plusBtn ${editMode4 ? "disabled" : ""}`} disabled={editMode4}>
                 <FontAwesomeIcon icon={faPlus} />
               </button>
 
-              <Link to="#">Edit</Link>
+              <Link to="#" onClick={toggleEditMode4}>
+                {editMode4 ? "Done" : "Edit"}
+              </Link>
 
               <h3>$26.90</h3>
             </div>

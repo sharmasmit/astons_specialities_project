@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 @font-face{
   font-family: "Albertus";
@@ -48,7 +49,7 @@ button, .cartBtn{
   border: none;
   font-size: 1rem;
   cursor: pointer;
-  border-radius: 0.8331rem;
+  border-radius: 0.625rem;
   padding: 0.625rem 0;
   margin: 0.313rem 0;
 }
@@ -108,9 +109,9 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
   padding: 0.438rem;
   margin: 0;
 }
-/* .MenuOpen{
-  display: block;
-} */
+.Home-Page .card .home-viewMore{
+  margin-top: 1.563rem;
+}
 .animation{
   left: 0;
 }
@@ -195,7 +196,7 @@ nav{
   justify-content: space-between;
   align-items: center;
 }
-nav button{
+nav button, .AddSlider .card-head h3{
   color: #000000;
   font-size: 1rem;
   font-family: "Albertus";
@@ -239,20 +240,21 @@ nav button:hover:after {
 .card-head{
   padding: 0.625rem;
 }
-.card-head h3{
-  font-weight: bold;
+.Home-Page .card-head h3{
+  line-height: 20px;
+}
+.category-page .card-head h3 { 
   line-height: 24px;
 }
 .Home-Page .card-head h3, .Home-Page .card-head h5{
   color: #000000;
 }
-.card-head h4{
-  line-height: 19px;
-}
+
 .card-head h5{
   line-height: 18px;
 }
-.card-head a, .Plus-Minus h4{
+.card-head a, .Plus-Minus h4, .buttons .ContinueBtn,
+.checkout{
   line-height: 19px;
 }
 .Slide , .buttons, .roundBtns{
@@ -296,7 +298,7 @@ nav button:hover:after {
   font-family: "Albertus";
   line-height: 31.5px;
 }
-.categories .left-card .viewMore{
+.categories .left-card .viewMore, .AddSlider .card-head .viewMore{
   margin-top: 2.375rem;
 }
 .categories .right-card .viewMore{
@@ -369,7 +371,7 @@ nav button:hover:after {
 .orderDetails-inner .last-H5, .orderHistory-box .order-review, .cartTotal .last-H5{
   padding-bottom: 0;
 }
-.orderHistory-box .topH1{
+.orderHistory-box .topH1, .category-page h1{
   padding-top: 0;
   font-weight: bold;
   font-family: "Albertus";
@@ -386,7 +388,7 @@ nav button:hover:after {
 .checkOut-box .Plus-Minus{
   padding-bottom: 0;
 }
-.checkOut-box h4, nav a, .categories h4, nav button{
+.checkOut-box h4, nav a, .categories h4, nav button, .cart-total-inner h4{
   font-family: "Albertus";
   line-height: 21px;
 }
@@ -467,12 +469,13 @@ nav button:hover:after {
   border-radius: 1.25rem;
   padding: 1.25rem;
 }
-.orderDetails-inner h5, .thankYou-page .thankyou, .category-page h3, .orderDetails-inner .orderPrice{
+.orderDetails-inner h5, .thankYou-page .thankyou, .category-page h3, .orderDetails-inner .orderPrice, .AddSlider .card-head h3, .checkOut-box h3, .cart-total-inner h4, .checkOut-box h5,
+.orderDetails-inner h5{
   font-weight: 400;
 }
-.orderDetails-inner h4{
+.orderDetails-inner h4, .checkOut-page .card-head h4{
   font-family: "Albertus";
-  font-weight: bolder;
+  font-weight: bold;
 }
 .orderDetails-inner span {
   font-size: 1rem;

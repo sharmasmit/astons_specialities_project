@@ -82,7 +82,8 @@ function Home() {
               <img src={require("../Images/Entree.png")} alt="Entree" />
               <div className="card-head">
                 <h3>Entree</h3>
-                <Link to="/Category" className="viewMore">
+                <h5>(includes 2 Side Dishes)</h5>
+                <Link to="/Category" className="viewMore home-viewMore">
                   <h4>View More</h4>
                   <img src={require("../Images/RightArrow.png")} style={{ marginLeft: "0.813rem" }} alt="Right Arrow" />
                 </Link>
@@ -95,7 +96,8 @@ function Home() {
               <img src={require("../Images/LegendarySteak.png")} alt="LegendarySteak" />
               <div className="card-head">
                 <h3>LegendarySteak</h3>
-                <Link to="/Category" className="viewMore">
+                <h5 className="includesTxt">(includes 2 Side Dishes)</h5>
+                <Link to="/Category" className="viewMore home-viewMore">
                   <h4>View More</h4>
                   <img src={require("../Images/RightArrow.png")} style={{ marginLeft: "0.813rem" }} alt="Right Arrow" />
                 </Link>
@@ -108,7 +110,8 @@ function Home() {
               <img src={require("../Images/LemonLimeChicken.png")} alt="LegendarySteak" />
               <div className="card-head">
                 <h3>GrillworksChicken</h3>
-                <Link to="/Category" className="viewMore">
+                <h5 className="includesTxt">(includes 2 Side Dishes)</h5>
+                <Link to="/Category" className="viewMore home-viewMore">
                   <h4>View More</h4>
                   <img src={require("../Images/RightArrow.png")} style={{ marginLeft: "0.813rem" }} alt="Right Arrow" />
                 </Link>
@@ -121,7 +124,8 @@ function Home() {
               <img src={require("../Images/Fisherman.png")} alt="LegendarySteak" />
               <div className="card-head">
                 <h3>FisherMan</h3>
-                <Link to="/Category" className="viewMore">
+                <h5 className="includesTxt">(includes 2 Side Dishes)</h5>
+                <Link to="/Category" className="viewMore home-viewMore">
                   <h4>View More</h4>
                   <img src={require("../Images/RightArrow.png")} style={{ marginLeft: "0.813rem" }} alt="Right Arrow" />
                 </Link>
