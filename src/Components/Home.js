@@ -30,21 +30,21 @@ function Home() {
         <Table />
         <div className="Navbar">
           <nav className="filterNav">
-            <Link to="#" onClick={() => handleFilterChange("All")}>
+            <button type="submit" onClick={() => handleFilterChange("All")}>
               All
-            </Link>
-            <Link to="#" onClick={() => handleFilterChange("Promotion")}>
+            </button>
+            <button type="submit" onClick={() => handleFilterChange("Promotion")}>
               Promotion
-            </Link>
-            <Link to="#" onClick={() => handleFilterChange("Starters")}>
+            </button>
+            <button type="submit" onClick={() => handleFilterChange("Starters")}>
               Starters
-            </Link>
-            <Link to="#" onClick={() => handleFilterChange("Entree")}>
+            </button>
+            <button type="submit" onClick={() => handleFilterChange("Entree")}>
               Entree
-            </Link>
-            <Link to="#" onClick={() => handleFilterChange("LegendarySteak")}>
+            </button>
+            <button type="submit" onClick={() => handleFilterChange("LegendarySteak")}>
               Legendary
-            </Link>
+            </button>
           </nav>
         </div>
         <div className="Slider">

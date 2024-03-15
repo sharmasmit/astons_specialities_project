@@ -74,7 +74,7 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
   color: var(--cream);
 }
 
-.TopHeader button{
+.TopHeader button, .Navbar button{
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -195,12 +195,12 @@ nav{
   justify-content: space-between;
   align-items: center;
 }
-nav a{
+nav button{
   color: #000000;
   font-size: 1rem;
   font-family: "Albertus";
 }
-nav a::after {
+nav button::after {
   content: '';
   display: block;
   margin: auto;
@@ -209,7 +209,7 @@ nav a::after {
   background: transparent;
   transition: width .5s ease-in-out, background-color .5s ease;
 }
-nav a:hover:after {
+nav button:hover:after {
   width: 100%;
   background: black;
 }
