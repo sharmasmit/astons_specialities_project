@@ -369,6 +369,8 @@ nav a:hover:after {
 }
 .orderHistory-box .topH1{
   padding-top: 0;
+  font-weight: bold;
+  font-family: "Albertus";
 }
 
 .delete-btn{
@@ -475,6 +477,7 @@ nav a:hover:after {
 }
 .orderHistory-box .dateDetails, .History-details .date{
   color: #888888;
+  font-weight: 400;
 }
 .orderHistory-box .canceled{
   color: #CA0808;
