@@ -120,7 +120,7 @@ function Home() {
             <div className="card">
               <img src={require("../Images/Fisherman.png")} alt="LegendarySteak" />
               <div className="card-head">
-                <h3>FisherMan</h3>
+                <h3>FisherMann</h3>
                 <Link to="/Category" className="viewMore">
                   <h4>View More</h4>
                   <img src={require("../Images/RightArrow.png")} style={{ marginLeft: "0.813rem" }} alt="Right Arrow" />
