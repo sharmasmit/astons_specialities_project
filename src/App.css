@@ -479,6 +479,7 @@ nav button:hover:after {
 }
 .orderDetails-inner span {
   font-size: 1rem;
+  font-weight: 400;
 }
 .orderHistory-box .dateDetails, .History-details .date{
   color: #888888;
