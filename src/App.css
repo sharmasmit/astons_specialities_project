@@ -199,6 +199,8 @@ nav button{
   color: #000000;
   font-size: 1rem;
   font-family: "Albertus";
+  padding: 0;
+  margin: 0;
 }
 nav button::after {
   content: '';
@@ -384,7 +386,7 @@ nav button:hover:after {
 .checkOut-box .Plus-Minus{
   padding-bottom: 0;
 }
-.checkOut-box h4, nav a, .categories h4{
+.checkOut-box h4, nav a, .categories h4, nav button{
   font-family: "Albertus";
   line-height: 21px;
 }
