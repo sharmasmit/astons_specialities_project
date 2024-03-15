@@ -18,9 +18,9 @@ function Home() {
     });
   };
 
-  const handleFilterChange = (e) => {
-    setFilter(e.target.value);
-    filterCategories(e.target.value);
+  const handleFilterChange = (category) => {
+    setFilter(category);
+    filterCategories(category);
   };
 
   return (
@@ -30,19 +30,19 @@ function Home() {
         <Table />
         <div className="Navbar">
           <nav className="filterNav">
-            <Link to="#" onClick={() => handleFilterChange({ target: { value: "All" } })} value="All">
+            <Link to="#" onClick={() => handleFilterChange("All")}>
               All
             </Link>
-            <Link to="#" onClick={() => handleFilterChange({ target: { value: "Promotion" } })} value="Promotion">
+            <Link to="#" onClick={() => handleFilterChange("Promotion")}>
               Promotion
             </Link>
-            <Link to="#" onClick={() => handleFilterChange({ target: { value: "Starters" } })} value="Starters">
+            <Link to="#" onClick={() => handleFilterChange("Starters")}>
               Starters
             </Link>
-            <Link to="#" onClick={() => handleFilterChange({ target: { value: "Entree" } })} value="Entree">
+            <Link to="#" onClick={() => handleFilterChange("Entree")}>
               Entree
             </Link>
-            <Link to="#" onClick={() => handleFilterChange({ target: { value: "LegendarySteak" } })} value="Legendary">
+            <Link to="#" onClick={() => handleFilterChange("LegendarySteak")}>
               Legendary
             </Link>
           </nav>
@@ -51,7 +51,7 @@ function Home() {
           <Slider />
         </div>
         <div className="Product-Categories">
-          <Link to="/Category" className="Promotion">
+          <Link to="/Category" className={`Promotion ${filter !== 'Promotion' && 'hidden'}`}>
             <div className="card">
               <img src={require("../Images/Promotion.png")} alt="Promotion" />
               <div className="card-head">
@@ -64,7 +64,7 @@ function Home() {
             </div>
           </Link>
 
-          <Link to="/Category" className="Starters">
+          <Link to="/Category" className={`Starters ${filter !== 'Starters' && 'hidden'}`}>
             <div className="card">
               <img src={require("../Images/Startars.png")} alt="Starters" />
               <div className="card-head">
@@ -77,12 +77,11 @@ function Home() {
             </div>
           </Link>
 
-          <Link to="/Category" className="Entree">
+          <Link to="/Category" className={`Entree ${filter !== 'Entree' && 'hidden'}`}>
             <div className="card">
               <img src={require("../Images/Entree.png")} alt="Entree" />
               <div className="card-head">
                 <h3>Entree</h3>
-                <h5>(includes 2 Side Dishes)</h5>
                 <Link to="/Category" className="viewMore">
                   <h4>View More</h4>
                   <img src={require("../Images/RightArrow.png")} style={{ marginLeft: "0.813rem" }} alt="Right Arrow" />
@@ -91,12 +90,11 @@ function Home() {
             </div>
           </Link>
 
-          <Link to="/Category" className="LegendarySteak">
+          <Link to="/Category" className={`LegendarySteak ${filter !== 'LegendarySteak' && 'hidden'}`}>
             <div className="card">
               <img src={require("../Images/LegendarySteak.png")} alt="LegendarySteak" />
               <div className="card-head">
-                <h3>Legendary Steak</h3>
-                <h5>(includes 2 Side Dishes)</h5>
+                <h3>LegendarySteak</h3>
                 <Link to="/Category" className="viewMore">
                   <h4>View More</h4>
                   <img src={require("../Images/RightArrow.png")} style={{ marginLeft: "0.813rem" }} alt="Right Arrow" />
@@ -105,12 +103,11 @@ function Home() {
             </div>
           </Link>
 
-          <Link to="/Category" className="GrillworksChicken">
+          <Link to="/Category" className={`GrillworksChicken ${filter !== 'GrillworksChicken' && 'hidden'}`}>
             <div className="card">
-              <img src={require("../Images/LemonLimeChicken.png")} alt="Grillworks Chicken" />
+              <img src={require("../Images/LemonLimeChicken.png")} alt="LegendarySteak" />
               <div className="card-head">
-                <h3>Grillworks Chicken</h3>
-                <h5>(includes 2 Side Dishes)</h5>
+                <h3>GrillworksChicken</h3>
                 <Link to="/Category" className="viewMore">
                   <h4>View More</h4>
                   <img src={require("../Images/RightArrow.png")} style={{ marginLeft: "0.813rem" }} alt="Right Arrow" />
@@ -119,12 +116,11 @@ function Home() {
             </div>
           </Link>
 
-          <Link to="/Category" className="FisherMan">
+          <Link to="/Category" className={`FisherMan ${filter !== 'FisherMan' && 'hidden'}`}>
             <div className="card">
-              <img src={require("../Images/Fisherman.png")} alt="FisherMan" />
+              <img src={require("../Images/Fisherman.png")} alt="LegendarySteak" />
               <div className="card-head">
-                <h3>Fisherman's Pride</h3>
-                <h5>(includes 2 Side Dishes)</h5>
+                <h3>FisherMan</h3>
                 <Link to="/Category" className="viewMore">
                   <h4>View More</h4>
                   <img src={require("../Images/RightArrow.png")} style={{ marginLeft: "0.813rem" }} alt="Right Arrow" />
@@ -132,6 +128,9 @@ function Home() {
               </div>
             </div>
           </Link>
+
+          {/* Add similar code blocks for other categories with appropriate classNames and conditions */}
+
         </div>
       </div>
     </>
