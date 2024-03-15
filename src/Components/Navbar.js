@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <>
       <div className="Navbar">
-        <nav className="filterNav" onClick={FilterMenu}>
+        <nav className="filterNav">
           <Link to={"#"} value= "All">All</Link>
           <Link to={"#"} value= "Promotion">Promotion</Link>
           <Link to={"#"} value= "Starters">Starters</Link>
