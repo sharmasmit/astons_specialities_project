@@ -58,8 +58,8 @@ function CheckOut() {
                 <FontAwesomeIcon icon={faPlus} />
               </button>
 
-              <Link to="#" onClick={toggleEditMode1}>
-                {editMode1 ? "Done" : "Edit"}
+              <Link type="submit" onClick={toggleEditMode1}>
+                {editMode1 ? "Edit" : "Edit"}
               </Link>
 
               <h3>$22.90</h3>
@@ -69,7 +69,7 @@ function CheckOut() {
           <div className="checkOut-box">
             <h4 className="delete-btn">
               1 x Prime Ribeye{" "}
-              <Link to="#">
+              <Link type="submit">
                 <img src={require("../Images/DeleteBtn.png")} />
               </Link>
             </h4>
@@ -86,7 +86,7 @@ function CheckOut() {
               </button>
 
               <Link to="#" onClick={toggleEditMode2}>
-                {editMode2 ? "Done" : "Edit"}
+                {editMode2 ? "Edit" : "Edit"}
               </Link>
 
               <h3>$47.90</h3>
@@ -96,7 +96,7 @@ function CheckOut() {
           <div className="checkOut-box">
             <h4 className="delete-btn">
               1 x Porterhouse{" "}
-              <Link to="#">
+              <Link type="submit">
                 <img src={require("../Images/DeleteBtn.png")} />
               </Link>
             </h4>
@@ -112,8 +112,8 @@ function CheckOut() {
                 <FontAwesomeIcon icon={faPlus} />
               </button>
 
-              <Link to="#" onClick={toggleEditMode3}>
-                {editMode3 ? "Done" : "Edit"}
+              <Link type="submit" onClick={toggleEditMode3}>
+                {editMode3 ? "Edit" : "Edit"}
               </Link>
 
               <h3>$32.90</h3>
@@ -123,7 +123,7 @@ function CheckOut() {
           <div className="checkOut-box">
             <h4 className="delete-btn">
               1 x Prime Ribeye Xtra Cut{" "}
-              <Link to="#">
+              <Link type="submit">
                 <img src={require("../Images/DeleteBtn.png")} />
               </Link>
             </h4>
@@ -139,8 +139,8 @@ function CheckOut() {
                 <FontAwesomeIcon icon={faPlus} />
               </button>
 
-              <Link to="#" onClick={toggleEditMode4}>
-                {editMode4 ? "Done" : "Edit"}
+              <Link type="submit" onClick={toggleEditMode4}>
+                {editMode4 ? "Edit" : "Edit"}
               </Link>
 
               <h3>$26.90</h3>
