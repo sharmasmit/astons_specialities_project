@@ -196,7 +196,7 @@ nav{
   justify-content: space-between;
   align-items: center;
 }
-nav button, .AddSlider .card-head h3{
+nav button, .AddSlider .card-head h3, .orderHistory-box h4 span{
   color: #000000;
   font-size: 1rem;
   font-family: "Albertus";
