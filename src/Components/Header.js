@@ -14,14 +14,6 @@ function Header() {
     document.getElementById("SideMenu").classList.remove("animation");
   };
 
-  function myFunction(e) {
-		var elems = document.querySelector(".active");
-    if(elems !=null) {
-      elems.classList.remove("active");
-    }
-    e.target.className = "active";
-	}
-
   return (
     <>
       <header>
@@ -48,7 +40,7 @@ function Header() {
               className="CloseBtnDark"
             />
           </Link>
-          <div className="sideMenu" id="SideMenu" onClick={myFunction}>
+          <div className="sideMenu" id="SideMenu">
             <button type="submit" style={{ float: "right" }} onClick={HideMenu}>
               <img src={require("../Images/CloseBtn.png")} alt="Close" />
             </button>
