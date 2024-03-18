@@ -71,8 +71,11 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
   background: white;
   z-index: 999999;
 }
-.active{
+.sideMenu .active{
   color: var(--cream);
+  font-family: "Albertus";
+  padding: 0.625rem 0;
+  font-weight: 400;
 }
 
 .TopHeader button, .Navbar button{
@@ -115,14 +118,15 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
 .animation{
   left: 0;
 }
-.sideMenu h3{
+.sideMenu .btn{
   padding: 0.625rem 0;
   font-weight: 400;
   color: #F4F1E8;
   opacity: 50%;
   transition: 0.5s;
+  font-family: "Albertus";
 }
-.sideMenu h3:hover{
+.sideMenu .btn:hover{
   color: var(--cream);
   opacity: 100%;
 }

@@ -14,6 +14,14 @@ function Header() {
     document.getElementById("SideMenu").classList.remove("animation");
   };
 
+  function myFunction(e) {
+		var elems = document.querySelector(".active");
+    if(elems !=null) {
+      elems.classList.remove("active");
+    }
+    e.target.className = "active";
+	}
+
   return (
     <>
       <header>
@@ -40,13 +48,13 @@ function Header() {
               className="CloseBtnDark"
             />
           </Link>
-          <div className="sideMenu" id="SideMenu">
+          <div className="sideMenu" id="SideMenu" onClick={myFunction}>
             <button type="submit" style={{ float: "right" }} onClick={HideMenu}>
               <img src={require("../Images/CloseBtn.png")} alt="Close" />
             </button>
-            <Link to="/Home" ><h3 style={{ marginTop: "6.688rem" }} className="btn active">Menu</h3></Link>
-            <Link to="/Category" ><h3 className="btn">Category</h3></Link>
-            <Link to="/OrderHistory" ><h3 className="btn">Order History</h3></Link>
+            <button type="submit" style={{ marginTop: "6.688rem" }} className="btn"><Link to="/Home" className="" >Menu</Link></button><br/>
+            <button type="submit" className="btn"><Link to="/Category" className="" >Category</Link></button><br/>
+            <button type="submit" className="btn"><Link to="/OrderHistory" >Order History</Link></button>
             {/* <h3>Profile</h3> */}
           </div>
         </div>
