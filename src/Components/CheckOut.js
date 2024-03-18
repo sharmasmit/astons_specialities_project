@@ -59,7 +59,7 @@ function CheckOut() {
               </button>
 
               <Link type="submit" onClick={toggleEditMode1}>
-                {editMode1 ? "Edit" : "Edit"}
+                {editMode1 ? "Lock" : "Edit"}
               </Link>
 
               <h3>$22.90</h3>
@@ -86,7 +86,7 @@ function CheckOut() {
               </button>
 
               <Link to="#" onClick={toggleEditMode2}>
-                {editMode2 ? "Edit" : "Edit"}
+                {editMode2 ? "Lock" : "Edit"}
               </Link>
 
               <h3>$47.90</h3>
@@ -113,7 +113,7 @@ function CheckOut() {
               </button>
 
               <Link type="submit" onClick={toggleEditMode3}>
-                {editMode3 ? "Edit" : "Edit"}
+                {editMode3 ? "Lock" : "Edit"}
               </Link>
 
               <h3>$32.90</h3>
@@ -140,7 +140,7 @@ function CheckOut() {
               </button>
 
               <Link type="submit" onClick={toggleEditMode4}>
-                {editMode4 ? "Edit" : "Edit"}
+                {editMode4 ? "Lock" : "Edit"}
               </Link>
 
               <h3>$26.90</h3>
