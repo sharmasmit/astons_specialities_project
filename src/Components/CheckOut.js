@@ -173,13 +173,13 @@ function CheckOut() {
           className="buttons"
           style={{ padding: "0.625rem", paddingBottom: "3.125rem" }}
         >
-          <Link to="/Home">
+          <Link to="/zb-frontend/Home">
           <button type="submit" className="ContinueBtn">
             Continue Order
           </button>
           </Link>
           
-          <Link to="/Thankyou">
+          <Link to="/zb-frontend/Thankyou">
             <button type="submit" className="checkout">
               Checkout
             </button>

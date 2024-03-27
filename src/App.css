@@ -1,10 +1,10 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
-@font-face{
+@font-face {
   font-family: "Albertus";
   src: url(./Fonts/AlbertusMediumRegular.ttf);
 }
@@ -17,34 +17,35 @@
   src: url(./Fonts/Montserrat-Regular.ttf);
 }
 
-:root{
-  --cream: #DBCC97;
+:root {
+  --cream: #dbcc97;
 }
 
-h1{
+h1 {
   font-size: 1.313rem;
 }
-h2{
+h2 {
   font-size: 1.125rem;
   font-family: "Albertus";
 }
-h3{
+h3 {
   font-size: 1rem;
   font-family: "Albertus";
 }
-h4{
+h4 {
   font-size: 0.875rem;
   font-family: "Montserrat";
 }
-h5{
+h5 {
   font-size: 0.75rem;
   font-family: "Montserrat";
 }
-a{
+a {
   text-decoration: none;
 }
 
-button, .cartBtn{
+button,
+.cartBtn {
   font-family: "Montserrat";
   border: none;
   font-size: 1rem;
@@ -53,32 +54,48 @@ button, .cartBtn{
   padding: 0.625rem 0;
   margin: 0.313rem 0;
 }
-header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodDetails, .checkOut-page, .thankYou-page, .orderDetails, .orderHistory, .orderHistory-Details, .sideMenu, .Add-Cart-Box{
+header,
+.FrontPage,
+.Slider,
+.Home-Page,
+.Table,
+.Navbar,
+.category-page,
+.FoodDetails,
+.checkOut-page,
+.thankYou-page,
+.orderDetails,
+.orderHistory,
+.orderHistory-Details,
+.sideMenu,
+.Add-Cart-Box {
   width: 24.563rem;
   margin: auto;
 }
 
-.TopHeader, .Add-Cart-Box{
+.TopHeader,
+.Add-Cart-Box {
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.625rem 1.875rem;
 }
-.TopHeader{
+.TopHeader {
   top: 0;
   width: 24.563rem;
   background: white;
   z-index: 999999;
 }
-.sideMenu .active{
+.sideMenu .active {
   color: var(--cream);
   font-family: "Albertus";
   padding: 0.625rem 0;
   font-weight: 400;
 }
 
-.TopHeader button, .Navbar button{
+.TopHeader button,
+.Navbar button {
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -89,7 +106,7 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
   right: 1.438rem;
   padding: 0.125rem 0.375rem;
   background-color: #000000;
-  color: #DBCC97;
+  color: #dbcc97;
   border-radius: 50%;
   font-size: 0.5rem;
 }
@@ -97,40 +114,45 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
   position: absolute;
   top: 0;
   left: -14.375rem;
-  /* display: none; */
   padding: 1.25rem 1.875rem;
   width: 14.375rem;
   height: 100vh;
-  background-image: url(./Images/LeftSizeMenu.png);
+  background-image: url(/src/Images/LeftSizeMenu.png);
   background-position: center;
   background-size: cover;
   transition: 0.5s;
   z-index: 99999;
+  visibility: hidden;
+  opacity: 0;
 }
-.sideMenu button, .plusBtn, .minusBtn{
+.sideMenu button,
+.plusBtn,
+.minusBtn {
   background-color: transparent;
   padding: 0.438rem;
   margin: 0;
 }
-.Home-Page .card .home-viewMore{
+.Home-Page .card .home-viewMore {
   margin-top: 1.563rem;
 }
-.animation{
+.animation {
+  visibility: visible;
+  opacity: 1;
   left: 0;
 }
-.sideMenu .btn{
+.sideMenu .btn {
   padding: 0.625rem 0;
   font-weight: 400;
-  color: #F4F1E8;
+  color: #f4f1e8;
   opacity: 50%;
   transition: 0.5s;
   font-family: "Albertus";
 }
-.sideMenu .btn:hover{
+.sideMenu .btn:hover {
   color: var(--cream);
   opacity: 100%;
 }
-.FrontPage{
+.FrontPage {
   padding: 6.25rem 3.125rem;
   background-image: url("./Images/ASTONS-BG.png");
   background-position: center;
@@ -141,7 +163,7 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
 .frontPage-inner {
   position: relative;
 }
-.FrontPage::before{
+.FrontPage::before {
   content: "";
   position: absolute;
   top: 0;
@@ -150,57 +172,72 @@ header, .FrontPage, .Slider, .Home-Page, .Table, .Navbar, .category-page, .FoodD
   width: 100%;
   height: 100%;
   opacity: 100%;
-  background-image: linear-gradient( #000000E6, #00000074,  #0000004D, #00000033 50%);
+  background-image: linear-gradient(
+    #000000e6,
+    #00000074,
+    #0000004d,
+    #00000033 50%
+  );
 }
-.loginBtn{
+.loginBtn {
   width: 100%;
   background-color: var(--cream);
   color: #000000;
 }
-.loginBtn:hover{
+.loginBtn:hover {
   background-color: #572500;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.guestBtn{
+.guestBtn {
   width: 100%;
   color: #572500;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
-.guestBtn:hover{
-  background-color: #F4F1E8;
+.guestBtn:hover {
+  background-color: #f4f1e8;
   color: #000000;
 }
-.FrontPage a{
+.FrontPage a {
   text-decoration: underline;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Montserrat";
 }
-.Slider, .Add-Cart-Box, .checkOut-box, .checkOut-inner, .cart-total-inner, .orderDetails, .orderHistory-box, .orderHistory-inner{
+.Slider,
+.Add-Cart-Box,
+.checkOut-box,
+.checkOut-inner,
+.cart-total-inner,
+.orderDetails,
+.orderHistory-box,
+.orderHistory-inner {
   padding: 1.25rem;
 }
-.Table{
+.Table {
   background-image: url(./Images/TableNo.1_BG.png);
   background-position: center;
   background-size: cover;
   color: var(--cream);
   position: relative;
 }
-.left-arrow, .left-arrow-white{
+.left-arrow,
+.left-arrow-white {
   position: absolute;
   top: 0.938rem;
   left: 1.875rem;
   display: none;
 }
-.Navbar{
+.Navbar {
   background-color: var(--cream);
-  padding: 1.25rem 1.875rem ;
+  padding: 1.25rem 1.875rem;
 }
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav button, .AddSlider .card-head h3, .orderHistory-box h4 span{
+nav button,
+.AddSlider .card-head h3,
+.orderHistory-box h4 span {
   color: #000000;
   font-size: 1rem;
   font-family: "Albertus";
@@ -208,26 +245,28 @@ nav button, .AddSlider .card-head h3, .orderHistory-box h4 span{
   margin: 0;
 }
 nav button::after {
-  content: '';
+  content: "";
   display: block;
   margin: auto;
   height: 2px;
   width: 0px;
   background: transparent;
-  transition: width .5s ease-in-out, background-color .5s ease;
+  transition: width 0.5s ease-in-out, background-color 0.5s ease;
 }
 nav button:hover:after {
   width: 100%;
   background: black;
 }
 
-.Home-Page .viewMore, .delete-btn{
+.Home-Page .viewMore,
+.delete-btn {
   color: #572500;
   display: flex;
   margin-top: 2.5rem;
   justify-content: right;
 }
-.Product-Categories, .category-child{
+.Product-Categories,
+.category-child {
   padding: 0.625rem;
   display: flex;
   width: 100%;
@@ -238,44 +277,50 @@ nav button:hover:after {
   width: 10.375rem;
   margin: 0.625rem;
   border-radius: 10px;
-  box-shadow: 0px 4px 32px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
-.card-head{
+.card-head {
   padding: 0.625rem;
 }
-.Home-Page .card-head h3{
+.Home-Page .card-head h3 {
   line-height: 20px;
 }
-.category-page .card-head h3, .orderHistory-box h4 span { 
+.category-page .card-head h3,
+.orderHistory-box h4 span {
   line-height: 24px;
 }
-.Home-Page .card-head h3, .Home-Page .card-head h5{
+.Home-Page .card-head h3,
+.Home-Page .card-head h5 {
   color: #000000;
 }
 
-.card-head h5{
+.card-head h5 {
   line-height: 18px;
 }
-.card-head a, .Plus-Minus h4, .buttons .ContinueBtn,
-.checkout{
+.card-head a,
+.Plus-Minus h4,
+.buttons .ContinueBtn,
+.checkout {
   line-height: 19px;
 }
-.Slide , .buttons, .roundBtns{
+.Slide,
+.buttons,
+.roundBtns {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
   overflow: hidden;
 }
-.categories{
-  background-color: #FFFFFF;
+.categories {
+  background-color: #ffffff;
 }
-.top-round{
+.top-round {
   padding-top: 3.4rem;
   position: relative;
   margin-top: -55px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   clip-path: ellipse(55% 100% at 50% 100%);
   transition: 0.5s;
   text-align: center;
@@ -284,41 +329,62 @@ nav button:hover:after {
   padding-top: 3rem;
   position: relative;
   margin-top: -61px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   clip-path: ellipse(70% 100% at 50% 100%);
   text-align: center;
 }
-.categories .card{
+.categories .card {
   background-color: #572500;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.categories .card a, .cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4, .orderDetails-inner h3, .orderHistory-box h4,.History-details, .viewMore{
+.categories .card a,
+.cart-total-inner h4,
+.cart-total-inner h3,
+.orderDetails-inner h4,
+.orderDetails-inner h3,
+.orderHistory-box h4,
+.History-details,
+.viewMore {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.categories h1, .FoodDetails h1 {
+.categories h1,
+.FoodDetails h1 {
   font-family: "Albertus";
   line-height: 31.5px;
 }
-.categories .left-card .viewMore, .AddSlider .card-head .viewMore{
+.categories .left-card .viewMore,
+.AddSlider .card-head .viewMore {
   margin-top: 2.375rem;
 }
-.categories .right-card .viewMore{
+.categories .right-card .viewMore {
   margin-top: 1.063rem;
 }
-.category-page .Table .left-arrow, .FoodDetails .Table .left-arrow-white, .checkOut-page .Table .left-arrow, .checkOut-page .TopHeader .CloseBtnDark, .orderHistory .Table .orderTxt, .orderHistory .Table .left-arrow, .orderHistory-Details .Table .orderTxt, .orderHistory-Details .Table .left-arrow{
+.category-page .Table .left-arrow,
+.FoodDetails .Table .left-arrow-white,
+.checkOut-page .Table .left-arrow,
+.checkOut-page .TopHeader .CloseBtnDark,
+.orderHistory .Table .orderTxt,
+.orderHistory .Table .left-arrow,
+.orderHistory-Details .Table .orderTxt,
+.orderHistory-Details .Table .left-arrow {
   display: block;
 }
-.Table .orderTxt  ,.checkOut-page .TopHeader .MenuBtn, .checkOut-page .TopHeader .Shop-Icon, .CloseBtnDark, .orderHistory .Table .TableTxt, .orderHistory-Details .Table .TableTxt{
+.Table .orderTxt,
+.checkOut-page .TopHeader .MenuBtn,
+.checkOut-page .TopHeader .Shop-Icon,
+.CloseBtnDark,
+.orderHistory .Table .TableTxt,
+.orderHistory-Details .Table .TableTxt {
   display: none;
 }
-.FoodDetails-Box .Food-head{
+.FoodDetails-Box .Food-head {
   text-align: center;
   padding: 0.344rem 1.875rem;
 }
-.food-heading{
+.food-heading {
   padding: 0.625rem 1.25rem;
   background-color: var(--cream);
   color: #000000;
@@ -326,141 +392,178 @@ nav button:hover:after {
   margin: 1.875rem 0;
   line-height: 24px;
 }
-.Plus-Minus{
+.Plus-Minus {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.938rem 0.313rem ;
-  background-color: #F4F1E8;
+  padding: 0.938rem 0.313rem;
+  background-color: #f4f1e8;
   border-radius: 0.625rem;
   margin: 0.625rem 0;
 }
-.Plus-Minus button, .Plus-Minus h4, .checkOut-box .Plus-Minus a{
+.Plus-Minus button,
+.Plus-Minus h4,
+.checkOut-box .Plus-Minus a {
   padding: 0;
   margin: 0 0.938rem;
 }
-.main-h4, .checkOut-box h3, .cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4, .orderDetails-inner h3, .orderHistory-box h4{
+.main-h4,
+.checkOut-box h3,
+.cart-total-inner h4,
+.cart-total-inner h3,
+.orderDetails-inner h4,
+.orderDetails-inner h3,
+.orderHistory-box h4 {
   flex: 1;
 }
-.Food-box{
+.Food-box {
   padding: 0 1.25rem;
 }
-.Add-Cart-Box{
-  background-color: #FFFFFF;
+.Add-Cart-Box {
+  background-color: #ffffff;
   padding: 1.25rem;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   position: fixed;
   bottom: 0;
 }
-.cartBtn{
+.cartBtn {
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 0.625rem 1.875rem;
   margin: 0;
 }
-.cartBtn:hover, .backMenu:hover, .checkOut-page .buttons .checkout:hover, .order-received button:hover{
+.cartBtn:hover,
+.backMenu:hover,
+.checkOut-page .buttons .checkout:hover,
+.order-received button:hover {
   background-color: #572500;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.Add-Cart-Box .Plus-Minus, .checkOut-box .Plus-Minus{
+.Add-Cart-Box .Plus-Minus,
+.checkOut-box .Plus-Minus {
   background-color: transparent;
   margin: 0;
 }
 .checkOut-box h3 {
   text-align: end;
 }
-.checkOut-box .last-H5{
+.checkOut-box .last-H5 {
   padding-bottom: 0.313rem;
 }
-.orderDetails-inner .last-H5, .orderHistory-box .order-review, .cartTotal .last-H5{
+.orderDetails-inner .last-H5,
+.orderHistory-box .order-review,
+.cartTotal .last-H5 {
   padding-bottom: 0;
 }
-.orderHistory-box .topH1, .category-page h1{
+.orderHistory-box .topH1,
+.category-page h1 {
   padding-top: 0;
   font-weight: bold;
   font-family: "Albertus";
 }
 
-.delete-btn{
+.delete-btn {
   color: #000000;
   margin: 0;
   justify-content: space-between;
 }
-.checkOut-box .minusBtn{
+.checkOut-box .minusBtn {
   margin-left: 0;
 }
-.checkOut-box .Plus-Minus{
+.checkOut-box .Plus-Minus {
   padding-bottom: 0;
 }
-.checkOut-box h4, nav a, .categories h4, nav button, .cart-total-inner h4{
+.checkOut-box h4,
+nav a,
+.categories h4,
+nav button,
+.cart-total-inner h4 {
   font-family: "Albertus";
   line-height: 21px;
 }
-.checkOut-box h5, .orderDetails-inner h5 {
+.checkOut-box h5,
+.orderDetails-inner h5 {
   color: #888888;
   line-height: 18px;
   padding: 0.188rem 0.188rem 0.188rem 0.625rem;
 }
-.checkOut-box, .orderHistory-box{
-  background-color: #F4F1E8;
+.checkOut-box,
+.orderHistory-box {
+  background-color: #f4f1e8;
   border-radius: 0.625rem;
   margin: 0.625rem 0;
 }
-.checkOut-box a{
+.checkOut-box a {
   font-family: "Montserrat";
   color: #572500;
   text-decoration: underline;
 }
-.AddSlider h2, .cart-total-inner h2, .order-received .thankyou, .orderHistory-box .order-review, .History-details .order-review{
+.AddSlider h2,
+.cart-total-inner h2,
+.order-received .thankyou,
+.orderHistory-box .order-review,
+.History-details .order-review {
   color: #572500;
 }
 
-.AddSlide .card{
+.AddSlide .card {
   margin: 0;
 }
-.AddSlider .swiper-free-mode > .swiper-wrapper{
+.AddSlider .swiper-free-mode > .swiper-wrapper {
   padding-bottom: 3.125rem;
 }
-.cart-total-inner h4, .cart-total-inner h3, .orderDetails-inner h4 , .orderDetails-inner h3, .orderHistory-box h4, .orderHistory-box h5, .History-details h1, .History-details h5{
+.cart-total-inner h4,
+.cart-total-inner h3,
+.orderDetails-inner h4,
+.orderDetails-inner h3,
+.orderHistory-box h4,
+.orderHistory-box h5,
+.History-details h1,
+.History-details h5 {
   color: #000000;
   padding: 0.313rem 0;
 }
-.cart-total-inner{
-  box-shadow: 0px 4px 32px 0px rgba(0,0,0,0.15);
+.cart-total-inner {
+  box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.15);
   border-radius: 0.625rem;
 }
-.buttons .ContinueBtn, .checkout{
+.buttons .ContinueBtn,
+.checkout {
   font-size: 0.875rem;
   background-color: transparent;
   color: #572500;
   border: 1px solid #572500;
 }
-.buttons .ContinueBtn:hover{
+.buttons .ContinueBtn:hover {
   background-color: var(--cream);
   color: #000000;
   border: 1px solid var(--cream);
 }
-.buttons button{
+.buttons button {
   width: 10.375rem;
   margin: 0 0.625rem;
 }
 
-.order-received button{
+.order-received button {
   width: 100%;
   margin: 0 0.625rem;
 }
-.checkOut-page .buttons .checkout , .order-received button{ 
-  color: #FFFFFF;
+.checkOut-page .buttons .checkout,
+.order-received button {
+  color: #ffffff;
   background-color: #000000;
   border: 1px solid #000000;
 }
-.AddSlider .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+.AddSlider .swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
   display: none;
 }
 /* .checkOut-inner .AddSlider .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
   display: none;
 } */
-.order-received h2{
+.order-received h2 {
   line-height: 27px;
 }
 .order-received {
@@ -468,16 +571,25 @@ nav button:hover:after {
   padding: 1.875rem 3.125rem;
 }
 
-.orderDetails-inner{
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+.orderDetails-inner {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   border-radius: 1.25rem;
   padding: 1.25rem;
 }
-.orderDetails-inner h5, .thankYou-page .thankyou, .category-page h3, .orderDetails-inner .orderPrice, .AddSlider .card-head h3, .checkOut-box h3, .cart-total-inner h4, .checkOut-box h5,
-.orderDetails-inner h5{
+.orderDetails-inner h5,
+.thankYou-page .thankyou,
+.category-page h3,
+.orderDetails-inner .orderPrice,
+.AddSlider .card-head h3,
+.checkOut-box h3,
+.cart-total-inner h4,
+.checkOut-box h5,
+.orderDetails-inner h5 {
   font-weight: 400;
 }
-.orderDetails-inner h4, .checkOut-page .card-head h4{
+.orderDetails-inner h4,
+.checkOut-page .card-head h4 {
   font-family: "Albertus";
   font-weight: bold;
 }
@@ -485,54 +597,65 @@ nav button:hover:after {
   font-size: 1rem;
   font-weight: 400;
 }
-.orderHistory-box .dateDetails, .History-details .date{
+.orderHistory-box .dateDetails,
+.History-details .date {
   color: #888888;
   font-weight: 400;
 }
-.orderHistory-box .canceled{
-  color: #CA0808;
+.orderHistory-box .canceled {
+  color: #ca0808;
 }
 
-.orderHistory-inner .roundBtns button{
+.orderHistory-inner .roundBtns button {
   border-radius: 6.25rem;
   width: 2.5rem;
   height: 2.5rem;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   color: #572500;
 }
-.roundBtns .prevBtn{
-  background-color: #CCCCCC;
+.roundBtns .prevBtn {
+  background-color: #cccccc;
   margin-right: 3.625rem;
 }
-.roundBtns .centerBtn{
-  background-color: #FFFFFF;
+.roundBtns .centerBtn {
+  background-color: #ffffff;
   margin: 0 0.313rem;
 }
-.roundBtns{
-  padding: 1.25rem 0rem 1.875rem 0rem ;
+.roundBtns {
+  padding: 1.25rem 0rem 1.875rem 0rem;
 }
-.roundBtns .nextBtn{
+.roundBtns .nextBtn {
   margin-left: 3.625rem;
   background-color: var(--cream);
 }
-.orderHistory-inner .roundBtns .active{
+.orderHistory-inner .roundBtns .active {
   background-color: #572500;
   color: white;
 }
-.disabled{
+.disabled {
   pointer-events: none;
 }
-.historyDetails-inner .History-details{
+.historyDetails-inner .History-details {
   padding: 1.563rem 1.25rem;
 }
-.Slider .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+.Slider .swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
   display: block;
   margin-bottom: 1.25rem;
 }
-.Slider .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+.Slider
+  .swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
   background-color: var(--cream);
 }
-svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa{
+svg:not(:root).svg-inline--fa,
+svg:not(:host).svg-inline--fa {
   color: #572500;
   font-size: 1.1rem;
   font-weight: 100;
