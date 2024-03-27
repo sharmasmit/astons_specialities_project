@@ -20,7 +20,7 @@ function ThankYouPage() {
             >
               Thank You!
             </h2>
-            <Link to="/zb-frontend/Home">
+            <Link to="/Home">
               <button
                 type="submit"
                 className="backMenu"

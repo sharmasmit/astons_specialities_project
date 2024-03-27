@@ -5,13 +5,13 @@ function Table() {
   return (
     <>
       <div className="Table">
-        <Link to="/zb-frontend/Home">
+        <Link to="/Home">
           <img
             src={require("../Images/Left-Arrow.png")}
             className="left-arrow"
           />
         </Link>
-        <Link to="/zb-frontend/Home">
+        <Link to="/Home">
           <img
             src={require("../Images/Left-Arrow-white.png")}
             className="left-arrow-white"

@@ -11,7 +11,7 @@ function OrderHistory() {
         <Table />
         <div className="orderHistory-inner">
           <div className="orderHistory-box">
-            <Link to="/zb-frontend/HistoryDetails">
+            <Link to="/HistoryDetails">
               <h4 className="topH1">
                 SAL-001202301170001 <span className="order-prise">$141.05</span>
               </h4>
@@ -21,7 +21,7 @@ function OrderHistory() {
           </div>
 
           <div className="orderHistory-box">
-          <Link to="/zb-frontend/HistoryDetails">
+          <Link to="/HistoryDetails">
             <h4 className="topH1">
               SAL-001202301170001 <span className="order-prise">$19.80</span>
             </h4>
@@ -31,7 +31,7 @@ function OrderHistory() {
           </div>
 
           <div className="orderHistory-box">
-          <Link to="/zb-frontend/HistoryDetails">
+          <Link to="/HistoryDetails">
             <h4 className="topH1">
               SAL-001202301170001 <span className="order-prise">$50.20</span>
             </h4>
@@ -41,7 +41,7 @@ function OrderHistory() {
           </div>
 
           <div className="orderHistory-box">
-          <Link to="/zb-frontend/HistoryDetails">
+          <Link to="/HistoryDetails">
             <h4 className="topH1">
               SAL-001202301170001 <span className="order-prise">$25.80</span>
             </h4>
@@ -51,7 +51,7 @@ function OrderHistory() {
           </div>
 
           <div className="orderHistory-box">
-          <Link to="/zb-frontend/HistoryDetails">
+          <Link to="/HistoryDetails">
             <h4 className="topH1">
               SAL-001202301170001 <span className="order-prise">$10.20</span>
             </h4>
@@ -61,7 +61,7 @@ function OrderHistory() {
           </div>
 
           <div className="orderHistory-box">
-          <Link to="/zb-frontend/HistoryDetails">
+          <Link to="/HistoryDetails">
             <h4 className="topH1">
               SAL-001202301170001 <span className="order-prise">$50.20</span>
             </h4>
@@ -71,7 +71,7 @@ function OrderHistory() {
           </div>
 
           <div className="orderHistory-box">
-          <Link to="/zb-frontend/HistoryDetails">
+          <Link to="/HistoryDetails">
             <h4 className="topH1">
               SAL-001202301170001 <span className="order-prise">$9.20</span>
             </h4>
@@ -81,7 +81,7 @@ function OrderHistory() {
           </div>
 
           <div className="orderHistory-box">
-          <Link to="/zb-frontend/HistoryDetails">
+          <Link to="/HistoryDetails">
             <h4 className="topH1">
               SAL-001202301170001 <span className="order-prise">$30.20</span>
             </h4>

@@ -51,12 +51,12 @@ function Home() {
           <Slider />
         </div>
         <div className="Product-Categories">
-          <Link to="/zb-frontend/Category" className={`Promotion ${filter !== 'Promotion' && 'hidden'}`}>
+          <Link to="/Category" className={`Promotion ${filter !== 'Promotion' && 'hidden'}`}>
             <div className="card">
               <img src={require("../Images/Promotion.png")} alt="Promotion" />
               <div className="card-head">
                 <h3>Promotion</h3>
-                <Link to="/zb-frontend/Category" className="viewMore">
+                <Link to="/Category" className="viewMore">
                   <h4>View More</h4>
                   <img src={require("../Images/RightArrow.png")} style={{ marginLeft: "0.813rem" }} alt="Right Arrow" />
                 </Link>
@@ -64,12 +64,12 @@ function Home() {
             </div>
           </Link>
 
-          <Link to="/zb-frontend/Category" className={`Starters ${filter !== 'Starters' && 'hidden'}`}>
+          <Link to="/Category" className={`Starters ${filter !== 'Starters' && 'hidden'}`}>
             <div className="card">
               <img src={require("../Images/Startars.png")} alt="Starters" />
               <div className="card-head">
                 <h3>Starters</h3>
-                <Link to="/zb-frontend/Category" className="viewMore">
+                <Link to="/Category" className="viewMore">
                   <h4>View More</h4>
                   <img src={require("../Images/RightArrow.png")} style={{ marginLeft: "0.813rem" }} alt="Right Arrow" />
                 </Link>
@@ -77,13 +77,13 @@ function Home() {
             </div>
           </Link>
 
-          <Link to="/zb-frontend/Category" className={`Entree ${filter !== 'Entree' && 'hidden'}`}>
+          <Link to="/Category" className={`Entree ${filter !== 'Entree' && 'hidden'}`}>
             <div className="card">
               <img src={require("../Images/Entree.png")} alt="Entree" />
               <div className="card-head">
                 <h3>Entree</h3>
                 <h5>(includes 2 Side Dishes)</h5>
-                <Link to="/zb-frontend/zb-frontend/Category" className="viewMore home-viewMore">
+                <Link to="/Category" className="viewMore home-viewMore">
                   <h4>View More</h4>
                   <img src={require("../Images/RightArrow.png")} style={{ marginLeft: "0.813rem" }} alt="Right Arrow" />
                 </Link>
@@ -91,13 +91,13 @@ function Home() {
             </div>
           </Link>
 
-          <Link to="/zb-frontend/Category" className={`LegendarySteak ${filter !== 'LegendarySteak' && 'hidden'}`}>
+          <Link to="/Category" className={`LegendarySteak ${filter !== 'LegendarySteak' && 'hidden'}`}>
             <div className="card">
               <img src={require("../Images/LegendarySteak.png")} alt="LegendarySteak" />
               <div className="card-head">
                 <h3>LegendarySteak</h3>
                 <h5 className="includesTxt">(includes 2 Side Dishes)</h5>
-                <Link to="/zb-frontend/Category" className="viewMore home-viewMore">
+                <Link to="/Category" className="viewMore home-viewMore">
                   <h4>View More</h4>
                   <img src={require("../Images/RightArrow.png")} style={{ marginLeft: "0.813rem" }} alt="Right Arrow" />
                 </Link>
@@ -105,13 +105,13 @@ function Home() {
             </div>
           </Link>
 
-          <Link to="/zb-frontend/Category" className={`GrillworksChicken ${filter !== 'GrillworksChicken' && 'hidden'}`}>
+          <Link to="/Category" className={`GrillworksChicken ${filter !== 'GrillworksChicken' && 'hidden'}`}>
             <div className="card">
               <img src={require("../Images/LemonLimeChicken.png")} alt="LegendarySteak" />
               <div className="card-head">
                 <h3>GrillworksChicken</h3>
                 <h5 className="includesTxt">(includes 2 Side Dishes)</h5>
-                <Link to="/zb-frontend/Category" className="viewMore home-viewMore">
+                <Link to="/Category" className="viewMore home-viewMore">
                   <h4>View More</h4>
                   <img src={require("../Images/RightArrow.png")} style={{ marginLeft: "0.813rem" }} alt="Right Arrow" />
                 </Link>
@@ -119,13 +119,13 @@ function Home() {
             </div>
           </Link>
 
-          <Link to="/zb-frontend/Category" className={`FisherMan ${filter !== 'FisherMan' && 'hidden'}`}>
+          <Link to="/Category" className={`FisherMan ${filter !== 'FisherMan' && 'hidden'}`}>
             <div className="card">
               <img src={require("../Images/Fisherman.png")} alt="LegendarySteak" />
               <div className="card-head">
                 <h3>FisherMan</h3>
                 <h5 className="includesTxt">(includes 2 Side Dishes)</h5>
-                <Link to="/zb-frontend/Category" className="viewMore home-viewMore">
+                <Link to="/Category" className="viewMore home-viewMore">
                   <h4>View More</h4>
                   <img src={require("../Images/RightArrow.png")} style={{ marginLeft: "0.813rem" }} alt="Right Arrow" />
                 </Link>
