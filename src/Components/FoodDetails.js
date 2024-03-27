@@ -263,7 +263,7 @@ function FoodDetails() {
               </button>
             </div>
 
-            <Link to="/CheckOut">
+            <Link to="/zb-frontend/CheckOut">
               <button type="submit" className="cartBtn">
                 Add to Cart
               </button>
